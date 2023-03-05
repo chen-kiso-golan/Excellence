@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const ServerAddress = "http://localhost:7015/api/Class";
+const ServerAddress = "http://localhost:5120/api/Product";
 
 export const addProductToDB = async (frm) => {
   try {

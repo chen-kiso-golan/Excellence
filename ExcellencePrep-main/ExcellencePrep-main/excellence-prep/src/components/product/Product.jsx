@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ChooseClassRow } from "./ChooseClassRow";
+import { ChooseDepartmentRow } from "./ChooseDepartmentRow";
 import { addProductToDB } from "../../servicess/ProductService";
 
 function Product(props) {
@@ -7,7 +7,7 @@ function Product(props) {
     ProductName: "",
     ProductPrice: "",
     UnitsInStock: "",
-    ClassName: "",
+    DepartmentName: "",
   });
 
   function handleChange(event) {
@@ -31,7 +31,7 @@ function Product(props) {
       ProductName: "",
       ProductPrice: "",
       UnitsInStock: "",
-      ClassName: "",
+      DepartmentName: "",
     });
   }
 
@@ -40,10 +40,10 @@ function Product(props) {
     await addProductToDB(json);
   };
 
-  const chooseClass = (data) => {
+  const chooseDepartment = (data) => {
     setFormData((prevFormData) => ({
       ...prevFormData,
-      ClassName: data,
+      DepartmentName: data,
     }));
   };
 
@@ -69,7 +69,7 @@ function Product(props) {
           <input type="number" placeholder="Enter Units In Stock" className="form-control" name="UnitsInStock" onChange={handleChange} value={formData.UnitsInStock} />
         </div>
         <div className="form-group">
-          <ChooseClassRow chooseClass={chooseClass} />
+          <ChooseDepartmentRow chooseDepartment={chooseDepartment} />
         </div>
         <button className="form--submit btn btn-danger">Sign up</button>
       </form>

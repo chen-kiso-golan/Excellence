@@ -11,11 +11,11 @@ export const ProductsReportEdit = () => {
   const [Name, setName] = useState(Product.Name);
   const [Price, setPrice] = useState(Product.Price);
   const [UnitsInStock, setUnitsInStock] = useState(Product.UnitsInStock);
-  const [ClassName, setClassName] = useState(Product.ClassName);
+  const [DepartmentName, setDepartmentName] = useState(Product.DepartmentName);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    if (Name === "" || Price === "" || UnitsInStock === "" || ClassName === "") {
+    if (Name === "" || Price === "" || UnitsInStock === "" || DepartmentName === "") {
       alert("Please fill all fields");
     } else {
       const updatedProduct = {
@@ -24,16 +24,16 @@ export const ProductsReportEdit = () => {
         Name: Name,
         Price: parseInt(Price),
         UnitsInStock: parseInt(UnitsInStock),
-        ClassName: ClassName,
+        DepartmentName: DepartmentName,
       };
       await UpdateProduct(updatedProduct);
       alert("Product Was Updated");
-      navigate("/ProductAndClassReportPage");
+      navigate("/ProductAndDepartmentReportPage");
     }
   };
 
   const handleReturn = () => {
-    navigate("/ProductAndClassReportPage");
+    navigate("/ProductAndDepartmentReportPage");
   };
 
   return (
@@ -64,10 +64,10 @@ export const ProductsReportEdit = () => {
           <input type="number" className="form-control" id="UnitsInStock" value={UnitsInStock} onChange={(event) => setUnitsInStock(event.target.value)} />
         </div>
         <div className="form-group">
-          <label htmlFor="ClassName" className="frm-lbl">
-            Class Name:
+          <label htmlFor="DepartmentName" className="frm-lbl">
+            Department Name:
           </label>
-          <input type="text" className="form-control" id="ClassName" value={ClassName} onChange={(event) => setClassName(event.target.value)} />
+          <input type="text" className="form-control" id="DepartmentName" value={DepartmentName} onChange={(event) => setDepartmentName(event.target.value)} />
         </div>
         <div>
           <button type="submit" className="btn btn-primary">

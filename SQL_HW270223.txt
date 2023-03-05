@@ -1,0 +1,168 @@
+--Q1 
+--כתבו STP שמקבל 2 מספרים ומחזיר ב 4 SELECTS את תוצאות החיבור, חיסור, מכפלה, חילוק 
+CREATE PROCEDURE calcOperations (@num1 INT, @num2 INT)
+AS
+BEGIN
+    SELECT @num1 + @num2 AS Addition
+    SELECT @num1 - @num2 AS Subtraction
+    SELECT @num1 * @num2 AS Multiplication
+    SELECT @num1 / @num2 AS Division
+END
+
+--Q2
+--כתבו STP שיוצר טבלה nums  עם שלושה טורים מספריים num1.num2 ו id שהוא יהיה identity 
+CREATE PROCEDURE createNumsTable
+AS
+BEGIN
+    CREATE TABLE nums (
+        id INT IDENTITY PRIMARY KEY,
+        num1 INT,
+        num2 INT
+    )
+END
+
+--Q3
+--כתבו STP שמקבל 2 פרמטרים מספריים ומכניס לטבלת nums את שני המספרים 
+CREATE PROCEDURE insertNums (@num1 INT, @num2 INT)
+AS
+BEGIN
+    INSERT INTO nums (num1, num2) VALUES (@num1, @num2)
+END
+
+
+--Q4
+--המשך לשאלה קודמת, במידה והפרמטר הראשון שווה ל IDENTITY החדש יש להכניס פעם נוספת את הערכים אך הפעם בסדר הפוך 
+CREATE PROCEDURE insertNumsAndReverseIfIdMatch (@num1 INT, @num2 INT)
+AS
+BEGIN
+    DECLARE @id INT
+    INSERT INTO nums (num1, num2) VALUES (@num1, @num2)
+    SET @id = SCOPE_IDENTITY()
+    IF @id = @num1
+        INSERT INTO nums (num1, num2) VALUES (@num2, @num1)
+END
+
+
+--Q5
+--המשך לשאלה הקודמת, במידה והפרמטר הראשון שווה ל 8 יש לעדכן את כל המספרים בטבלה שהם 1 שיהיו 2 
+CREATE PROCEDURE updateNumsIfFirstParam8
+AS
+BEGIN
+    UPDATE nums SET num1 = 2 WHERE num1 = 1
+END
+
+
+--Q6
+--המשך לשאלה הקודמת, במידה והפרמטר הראשון שווה ל 9 יש לעדכן את כל המספרים בטבלהשיוגדלו ב 1 
+CREATE PROCEDURE updateNumsIfFirstParam9
+AS
+BEGIN
+    UPDATE nums SET num1 = num1 + 1, num2 = num2 + 1
+END
+
+
+--Q7
+--המשך לשאלה הקודמת, במידה והפרמטר הראשון שווה ל10  יש למחוק אל כל הרשומות שהסכום של שני המספרים גדול מ 100 
+CREATE PROCEDURE deleteNumsIfFirstParam10
+AS
+BEGIN
+    DELETE FROM nums WHERE num1 + num2 > 100
+END
+
+
+--Q10-12
+--כתבו STP חדש calcNums  שמקבל 3 פרמטרים מספריים מכניסה לטבלת nums את הפרמטר הראשון ואת הפרמטר הגדול מבין השני והשלישי לטור השני 
+--הוסיפו לSTP זה את הלוגיקה שכאשר ה identity האחרון שנוצר כאשר הוא זוגי יש לעדכן את num1 שיהיה הערך הקיים שלו + הערך של identity עבור הid האחרון. ז"א אם identity היה 12 num1=30, הוא אכן זוגי אז יהיה עדכון לערך num1 יהיה מעודכן ל 42 עבור id=12 
+--הוסיפו ל STP זה את הלוגיקה שבסוף ה STP הוא מוחק רשומות ש ID שלהם זוגי וגם num2 גדול מ 100  
+CREATE PROCEDURE calcNums
+    @num1 int,
+    @num2 int,
+    @num3 int
+AS
+BEGIN
+    DECLARE @max_num int;
+    IF @num2 > @num3
+        SET @max_num = @num2;
+    ELSE
+        SET @max_num = @num3;
+
+    INSERT INTO nums (num1, num2)
+    VALUES (@num1, @max_num);
+
+    DECLARE @last_id int = SCOPE_IDENTITY();
+    IF @last_id % 2 = 0
+    BEGIN
+        UPDATE nums
+        SET num1 = num1 + @last_id
+        WHERE id = @last_id;
+    END
+
+    DELETE FROM nums
+    WHERE id % 2 = 0 AND num2 > 100;
+END
+
+
+--Q13
+--כתבו STP  חדש שמקבל פרמטר מספרי , ה STP בודק שסהכ הרשומות בטבלה nums קטן מהמספר הפרמטר. במידה וכן אז שולף את כל הרשומות ש num1 גדול מהפרמטר (רמז select count(*)( 
+CREATE PROCEDURE checkNums
+    @param INT
+AS
+BEGIN
+    DECLARE @count INT
+    
+    SELECT @count = COUNT(*) FROM nums
+    
+    IF @count < @param
+    BEGIN
+        SELECT * FROM nums WHERE num1 > @param
+    END
+END
+
+
+--Q14-16
+--צרו 2 טבלאות חדשות a,b לשתיהן יש שני טורים aa,bb מספריים (הוסיפו את היצירה לSTP שיצרת בסעיף 2 
+--כתבו STP  שמקבל 2 פרמטרים מספריים ומוסיף ל 2 הטבלאות החדשות את שני המספרים בהתאמה, עבור טבלה b יש להוסיף עוד רשומה בנוסף, כאשר הערך הראשון aa נשאר בערך המקורי והפרמטר bb הופך להיות כפול מעצמו. ז"א תמיד בטבלת b יהיו פי שניים רשומות מטבלה a 
+--כתבו STP שמקבלת 2 פרמטרים ושולפת את טבלת b לפי הערכים של מינימום ומקסימום . לדוגמא אם הפרמטרים היו 4,6 אז ישלוף מטבלת b את כל הערכים שהטור aa גדול מ 4 וקטן מ 6. במידה והפרמטר הראשון גדול משהני יש לבדוק את זה ולהפוך אותם 
+CREATE TABLE a (
+  aa NUMERIC,
+  bb NUMERIC
+);
+
+CREATE TABLE b (
+  aa NUMERIC,
+  bb NUMERIC
+);
+
+
+CREATE PROCEDURE addNumsToTables (@num1 NUMERIC, @num2 NUMERIC)
+AS
+BEGIN
+    -- Add num1 and num2 to table a
+    INSERT INTO a (aa, bb) VALUES (@num1, @num2);
+
+    -- Add num1 and num2 * 2 to table b
+    INSERT INTO b (aa, bb) VALUES (@num1, @num2 * 2);
+
+    -- Add one more row to table b with aa same as previous and bb equal to @num2 * 2
+    INSERT INTO b (aa, bb) VALUES (@num1, @num2 * 2);
+
+END;
+
+
+CREATE PROCEDURE getRowsFromB (@minAA NUMERIC, @maxAA NUMERIC)
+AS
+BEGIN
+    -- Swap the values of @minAA and @maxAA if @minAA is greater than @maxAA
+    IF @minAA > @maxAA
+    BEGIN
+        DECLARE @temp NUMERIC;
+        SET @temp = @minAA;
+        SET @minAA = @maxAA;
+        SET @maxAA = @temp;
+    END
+
+    -- Retrieve rows from table b based on the minimum and maximum values of column aa
+    SELECT * FROM b WHERE aa > @minAA AND aa < @maxAA;
+END;
+
+

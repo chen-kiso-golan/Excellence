@@ -33,7 +33,7 @@ export const ProductsReportRow = (props) => {
     <>
       {AllProducts.length > 0 ? (
         AllProducts.map((Product) => {
-          let { Code, Name, Price, UnitsInStock, ClassName } = Product;
+          let { Code, Name, Price, UnitsInStock, DepartmentName } = Product;
           return (
             <>
               <tr>
@@ -41,7 +41,7 @@ export const ProductsReportRow = (props) => {
                 <td>{Name}</td>
                 <td>{Price}</td>
                 <td>{UnitsInStock}</td>
-                <td>{ClassName}</td>
+                <td>{DepartmentName}</td>
                 <td>
                   <button
                     className="btn btn-warning"

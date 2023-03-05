@@ -1,24 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { AddClassPage, ProductPage, ProductAndClassReportPage } from "../../pages/pagesIndex";
+import { AddDepartmentPage, ProductPage, ProductAndDepartmentReportPage } from "../../pages/pagesIndex";
 
 function TopNavbar() {
   return (
     <div>
       <ul className="topnavbar--menu">
         <li>
-          <Link to="/AddClassPage">
-            <label>AddClass</label>
+          <Link to="/AddDepartmentPage">
+            <label>Add Department</label>
           </Link>
         </li>
         <li>
           <Link to="/ProductPage">
-            <label>ProductPage</label>
+            <label>Product Page</label>
           </Link>
         </li>
         <li>
-          <Link to="/ProductAndClassReportPage">
-            <label>ProductAndClassReportPage</label>
+          <Link to="/ProductAndDepartmentReportPage">
+            <label>Product And Department Report Page</label>
           </Link>
         </li>
       </ul>
