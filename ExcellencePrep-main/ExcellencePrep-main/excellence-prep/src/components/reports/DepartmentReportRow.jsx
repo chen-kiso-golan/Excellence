@@ -9,8 +9,8 @@ export const DepartmentReportRow = (props) => {
 
   const getDB = async () => {
     let result = await getAllDepartmentFromDB();
-    setAllDepartment(result.data);
-    console.log("111" + result.data);
+    setAllDepartment(result);
+    console.log("111" + result);
   };
 
   useEffect(() => {

@@ -15,7 +15,8 @@ export const getAllDepartmentFromDB = async () => {
   try {
     console.log("servicess - DepartmentService - getAllDepartmentFromDB ran Successfully");
     let endpoint = await axios.get(`${ServerAddress}/getAllDepartmentFromDB`);
-    return endpoint;
+    console.log("getAllDepartmentFromDB:" + endpoint.data);
+    return endpoint.data;
   } catch (ex) {
     console.log(`An Exception occurred while initializing the getAllDepartmentFromDB Service : ${ex}`);
   }
