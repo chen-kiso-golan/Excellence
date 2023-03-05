@@ -5,22 +5,22 @@ import { UpdateDepartment } from "../../servicess/DepartmentService";
 export const DepartmentReportEdit = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { Class } = location.state;
+  const { Department } = location.state;
 
-  const [Code, setCode] = useState(Class.Code);
-  const [DepartmentName, setDepartmentName] = useState(Department.DepartmentName);
-  const [DepartmentDescription, setDepartmentDescription] = useState(Department.DepartmentDescription);
+  const [Id, setId] = useState(Department.Id);
+  const [Name, setName] = useState(Department.Name);
+  const [Description, setDescription] = useState(Department.Description);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    if (DepartmentName === "" || DepartmentDescription === "") {
+    if (Name === "" || Description === "") {
       alert("Please fill all fields");
     } else {
       const updatedDepartment = {
         ...Department,
-        Code: parseInt(Code),
-        DepartmentName: DepartmentName,
-        DepartmentDescription: DepartmentDescription,
+        id: parseInt(Id),
+        name: Name,
+        description: Description,
       };
       await UpdateDepartment(updatedDepartment);
       alert("Department Was Updated");
@@ -36,22 +36,22 @@ export const DepartmentReportEdit = () => {
     <div className="form-container">
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="Code" className="frm-lbl">
-            Department Code:
+          <label htmlFor="Id" className="frm-lbl">
+            Department Id:
           </label>
-          <input type="text" className="form-control" id="Code" value={Code} onChange={(event) => setCode(event.target.value)} />
+          <input type="text" className="form-control" id="Id" value={Id} onChange={(event) => setId(event.target.value)} />
         </div>
         <div className="form-group">
-          <label htmlFor="DepartmentName" className="frm-lbl">
+          <label htmlFor="Name" className="frm-lbl">
             Department Name:
           </label>
-          <input type="text" className="form-control" id="DepartmentName" value={DepartmentName} onChange={(event) => setDepartmentName(event.target.value)} />
+          <input type="text" className="form-control" id="Name" value={Name} onChange={(event) => setName(event.target.value)} />
         </div>
         <div className="form-group">
-          <label htmlFor="DepartmentDescription" className="frm-lbl">
+          <label htmlFor="Description" className="frm-lbl">
             Department Description:
           </label>
-          <input type="text" className="form-control" id="DepartmentDescription" value={DepartmentDescription} onChange={(event) => setDepartmentDescription(event.target.value)} />
+          <input type="text" className="form-control" id="Description" value={Description} onChange={(event) => setDescription(event.target.value)} />
         </div>
         <div>
           <button type="submit" className="btn btn-primary">

@@ -24,8 +24,8 @@ export const DepartmentReportRow = (props) => {
     });
   };
 
-  const handleDelete = async (Code) => {
-    await deleteDepartment(Code);
+  const handleDelete = async (id) => {
+    await deleteDepartment(id);
     getDB();
   };
 
@@ -33,13 +33,13 @@ export const DepartmentReportRow = (props) => {
     <>
       {AllDepartment.length > 0 ? (
         AllDepartment.map((Department) => {
-          let { Code, DepartmentName, DepartmentDescription } = Department;
+          let { id, name, description } = Department;
           return (
             <>
               <tr>
-                <th scope="row">{Code}</th>
-                <td>{DepartmentName}</td>
-                <td>{DepartmentDescription}</td>
+                <th scope="row">{id}</th>
+                <td>{name}</td>
+                <td>{description}</td>
                 <td>
                   <button
                     className="btn btn-warning"
@@ -54,7 +54,7 @@ export const DepartmentReportRow = (props) => {
                   <button
                     className="btn btn-danger"
                     onClick={() => {
-                      handleDelete(Department.Code);
+                      handleDelete(Department.id);
                     }}
                   >
                     Remove Department
@@ -65,36 +65,7 @@ export const DepartmentReportRow = (props) => {
           );
         })
       ) : (
-        <>
-          {/* <h1>There are no Products.</h1> */}
-          <tr>
-            <th scope="row">?</th>
-            <td>?</td>
-            <td>?</td>
-            <td>?</td>
-            <td>?</td>
-            <td>
-              <button
-                className="btn btn-warning"
-                onClick={() => {
-                  handleEdit(Department);
-                }}
-              >
-                Edit Department
-              </button>
-            </td>
-            <td>
-              <button
-                className="btn btn-danger"
-                onClick={() => {
-                  handleDelete(Department.Code);
-                }}
-              >
-                Remove Department
-              </button>
-            </td>
-          </tr>
-        </>
+        <>{<h1>There are no Departments.</h1>}</>
       )}
     </>
   );

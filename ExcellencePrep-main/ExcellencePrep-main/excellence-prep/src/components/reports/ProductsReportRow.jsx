@@ -9,6 +9,7 @@ export const ProductsReportRow = (props) => {
 
   const getDB = async () => {
     let result = await getAllProductsFromDB();
+    console.log("result:" + JSON.stringify(result));
     setAllProducts(result);
   };
 
@@ -24,8 +25,8 @@ export const ProductsReportRow = (props) => {
     });
   };
 
-  const handleDelete = async (Code) => {
-    await deleteProduct(Code);
+  const handleDelete = async (id) => {
+    await deleteProduct(id);
     getDB();
   };
 
@@ -33,15 +34,15 @@ export const ProductsReportRow = (props) => {
     <>
       {AllProducts.length > 0 ? (
         AllProducts.map((Product) => {
-          let { Code, Name, Price, UnitsInStock, DepartmentName } = Product;
+          let { id, name, price, unitsInStock, departmentName } = Product;
           return (
             <>
               <tr>
-                <th scope="row">{Code}</th>
-                <td>{Name}</td>
-                <td>{Price}</td>
-                <td>{UnitsInStock}</td>
-                <td>{DepartmentName}</td>
+                <th scope="row">{id}</th>
+                <td>{name}</td>
+                <td>{price}</td>
+                <td>{unitsInStock}</td>
+                <td>{departmentName}</td>
                 <td>
                   <button
                     className="btn btn-warning"
@@ -56,7 +57,7 @@ export const ProductsReportRow = (props) => {
                   <button
                     className="btn btn-danger"
                     onClick={() => {
-                      handleDelete(Product.Code);
+                      handleDelete(Product.id);
                     }}
                   >
                     Remove Product
@@ -67,36 +68,7 @@ export const ProductsReportRow = (props) => {
           );
         })
       ) : (
-        <>
-          {/* <h1>There are no Products.</h1> */}
-          <tr>
-            <th scope="row">?</th>
-            <td>?</td>
-            <td>?</td>
-            <td>?</td>
-            <td>?</td>
-            <td>
-              <button
-                className="btn btn-warning"
-                onClick={() => {
-                  handleEdit(Product);
-                }}
-              >
-                Edit Product
-              </button>
-            </td>
-            <td>
-              <button
-                className="btn btn-danger"
-                onClick={() => {
-                  handleDelete(Product.Code);
-                }}
-              >
-                Remove Product
-              </button>
-            </td>
-          </tr>
-        </>
+        <>{<h1>There are no Products.</h1>}</>
       )}
     </>
   );

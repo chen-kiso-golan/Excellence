@@ -4,10 +4,10 @@ import { addProductToDB } from "../../servicess/ProductService";
 
 function Product(props) {
   const [formData, setFormData] = useState({
-    ProductName: "",
-    ProductPrice: "",
-    UnitsInStock: "",
-    DepartmentName: "",
+    name: "",
+    price: "",
+    unitsInStock: "",
+    departmentName: "",
   });
 
   function handleChange(event) {
@@ -20,7 +20,7 @@ function Product(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    if (formData.ProductName === "" || formData.ProductPrice === "" || formData.UnitsInStock === "") {
+    if (formData.name === "" || formData.price === "" || formData.unitsInStock === "") {
       console.log("fill all the filldes");
       return;
     } else {
@@ -28,10 +28,10 @@ function Product(props) {
       console.log("dats was sent");
     }
     setFormData({
-      ProductName: "",
-      ProductPrice: "",
-      UnitsInStock: "",
-      DepartmentName: "",
+      name: "",
+      productPrice: "",
+      unitsInStock: "",
+      departmentName: "",
     });
   }
 
@@ -43,7 +43,7 @@ function Product(props) {
   const chooseDepartment = (data) => {
     setFormData((prevFormData) => ({
       ...prevFormData,
-      DepartmentName: data,
+      departmentName: data,
     }));
   };
 
@@ -51,22 +51,22 @@ function Product(props) {
     <div>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="ProductName" className="frm-lbl">
+          <label htmlFor="name" className="frm-lbl">
             Product Name:
           </label>
-          <input type="text" placeholder="Enter Product Name" className="form-control" name="ProductName" onChange={handleChange} value={formData.ProductName} />
+          <input type="text" placeholder="Enter Product Name" className="form-control" name="name" onChange={handleChange} value={formData.name} />
         </div>
         <div className="form-group">
-          <label htmlFor="ProductPrice" className="frm-lbl">
+          <label htmlFor="price" className="frm-lbl">
             Product Price:
           </label>
-          <input type="number" placeholder="Enter Product Price" className="form-control" name="ProductPrice" onChange={handleChange} value={formData.ProductPrice} />
+          <input type="number" placeholder="Enter Product Price" className="form-control" name="price" onChange={handleChange} value={formData.price} />
         </div>
         <div className="form-group">
-          <label htmlFor="UnitsInStock" className="frm-lbl">
+          <label htmlFor="unitsInStock" className="frm-lbl">
             Units In Stock:
           </label>
-          <input type="number" placeholder="Enter Units In Stock" className="form-control" name="UnitsInStock" onChange={handleChange} value={formData.UnitsInStock} />
+          <input type="number" placeholder="Enter Units In Stock" className="form-control" name="unitsInStock" onChange={handleChange} value={formData.unitsInStock} />
         </div>
         <div className="form-group">
           <ChooseDepartmentRow chooseDepartment={chooseDepartment} />

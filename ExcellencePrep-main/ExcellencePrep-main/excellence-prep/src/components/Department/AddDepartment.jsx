@@ -3,8 +3,8 @@ import { addDepartmentToDB } from "../../servicess/DepartmentService";
 
 function AddDepartment(props) {
   const [formData, setFormData] = useState({
-    DepartmentName: "",
-    DepartmentDescription: "",
+    name: "",
+    description: "",
   });
 
   function handleChange(event) {
@@ -17,7 +17,7 @@ function AddDepartment(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    if (formData.DepartmentName === "" || formData.DepartmentDescription === "") {
+    if (formData.name === "" || formData.description === "") {
       console.log("fill all the filldes");
       return;
     } else {
@@ -25,8 +25,8 @@ function AddDepartment(props) {
       console.log("dats was sent");
     }
     setFormData({
-      DepartmentName: "",
-      DepartmentDescription: "",
+      name: "",
+      description: "",
     });
   }
 
@@ -39,16 +39,16 @@ function AddDepartment(props) {
     <div>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="DepartmentName" className="frm-lbl">
+          <label htmlFor="name" className="frm-lbl">
             Department name:
           </label>
-          <input type="text" placeholder="Enter Department name" className="form-control" name="DepartmentName" onChange={handleChange} value={formData.DepartmentName} />
+          <input type="text" placeholder="Enter Department name" className="form-control" name="name" onChange={handleChange} value={formData.name} />
         </div>
         <div className="form-group">
-          <label htmlFor="DepartmentDescription" className="frm-lbl">
+          <label htmlFor="description" className="frm-lbl">
             Department description:
           </label>
-          <input type="text" placeholder="Enter Department description" className="form-control" name="DepartmentDescription" onChange={handleChange} value={formData.DepartmentDescription} />
+          <input type="text" placeholder="Enter Department description" className="form-control" name="description" onChange={handleChange} value={formData.description} />
         </div>
         <button className="form--submit btn btn-danger">Sign up</button>
       </form>

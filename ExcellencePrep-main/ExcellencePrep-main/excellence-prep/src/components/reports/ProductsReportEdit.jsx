@@ -7,7 +7,7 @@ export const ProductsReportEdit = () => {
   const location = useLocation();
   const { Product } = location.state;
 
-  const [Code, setCode] = useState(Product.Code);
+  const [Id, setId] = useState(Product.Id);
   const [Name, setName] = useState(Product.Name);
   const [Price, setPrice] = useState(Product.Price);
   const [UnitsInStock, setUnitsInStock] = useState(Product.UnitsInStock);
@@ -20,11 +20,11 @@ export const ProductsReportEdit = () => {
     } else {
       const updatedProduct = {
         ...Product,
-        Code: parseInt(Code),
-        Name: Name,
-        Price: parseInt(Price),
-        UnitsInStock: parseInt(UnitsInStock),
-        DepartmentName: DepartmentName,
+        id: parseInt(Id),
+        name: Name,
+        price: parseInt(Price),
+        unitsInStock: parseInt(UnitsInStock),
+        departmentName: DepartmentName,
       };
       await UpdateProduct(updatedProduct);
       alert("Product Was Updated");
@@ -40,10 +40,10 @@ export const ProductsReportEdit = () => {
     <div className="form-container">
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="Code" className="frm-lbl">
+          <label htmlFor="Id" className="frm-lbl">
             Product Code:
           </label>
-          <input type="text" className="form-control" id="Code" value={Code} onChange={(event) => setCode(event.target.value)} />
+          <input type="text" className="form-control" id="Id" value={Id} onChange={(event) => setId(event.target.value)} />
         </div>
         <div className="form-group">
           <label htmlFor="Name" className="frm-lbl">

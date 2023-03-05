@@ -13,7 +13,7 @@ function TopNavbar() {
         </li>
         <li>
           <Link to="/ProductPage">
-            <label>Product Page</label>
+            <label>Add Product</label>
           </Link>
         </li>
         <li>
