@@ -11,17 +11,21 @@ namespace WebApi.Controllers
     {
 
         public static List<Department> DepartmentList = new List<Department>();
-        public static int Counter = DepartmentList?.Max(d => d.Id);
+        //public static int? Counter = DepartmentList?.Max(d => d.Id);
+
+        public DepartmentController()
+        {
+            DepartmentList.Clear();
+            DepartmentList.Add(new Department() { Id = 1, Name = "Toys" });
+            DepartmentList.Add(new Department() { Id = 2, Name = "Food" });
+            DepartmentList.Add(new Department() { Id = 3, Name = "Drinks" });
+            DepartmentList.Add(new Department() { Id = 4, Name = "Snacks" });
+        }
 
 
         [HttpGet("getAllDepartmentFromDB")]
         public JsonResult getAllDepartmentFromDB()
         {
-            DepartmentList.Add(new Department() { Id = 1, Name = "Toys" });
-            DepartmentList.Add(new Department() { Id = 2, Name = "Food" });
-            DepartmentList.Add(new Department() { Id = 3, Name = "Drinks" });
-            DepartmentList.Add(new Department() { Id = 4, Name = "Snacks" });
-
             return new JsonResult(DepartmentList);
         }
 
@@ -29,7 +33,7 @@ namespace WebApi.Controllers
         [HttpPost("addDepartmentToDB")]
         public JsonResult addDepartmentToDB(string name, string description)
         {
-            DepartmentList.Add(new Department() { Id = Counter+1 , Name = name, Description = description });
+            DepartmentList.Add(new Department() { Id = 5 , Name = name, Description = description });
             return new JsonResult("OK");
         }
 

@@ -9,7 +9,7 @@ export const ProductsReportRow = (props) => {
 
   const getDB = async () => {
     let result = await getAllProductsFromDB();
-    setAllProducts(result.data);
+    setAllProducts(result);
   };
 
   useEffect(() => {

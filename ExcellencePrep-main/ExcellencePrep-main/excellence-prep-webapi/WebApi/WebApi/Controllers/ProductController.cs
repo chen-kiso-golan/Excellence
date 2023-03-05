@@ -5,20 +5,30 @@ using WebApi.Models;
 
 namespace WebApi.Controllers
 {
+    [ApiController]
+    [Route("api/Product")]
     public class ProductController : Controller
     {
         public static List<Product> ProductList = new List<Product>();
-        public static int Counter = ProductList?.Max(p => p.Id);
+        //public static int? Counter = ProductList?.Max(p => p.Id);
 
-        
-        [HttpGet("getAllProductsFromDB")]
-        public JsonResult getAllProductsFromDB()
+
+        public ProductController()
         {
-            ProductList.Add(new Product() { Id = 1, Name = "Doll" , Price = 10, UnitsInStock = 5, DepartmentName = "?" });
+            ProductList.Clear();
+            ProductList.Add(new Product() { Id = 1, Name = "Doll", Price = 10, UnitsInStock = 5, DepartmentName = "?" });
             ProductList.Add(new Product() { Id = 2, Name = "Meat", Price = 20, UnitsInStock = 10, DepartmentName = "?" });
             ProductList.Add(new Product() { Id = 3, Name = "Milk", Price = 6, UnitsInStock = 9, DepartmentName = "?" });
             ProductList.Add(new Product() { Id = 4, Name = "Cookies", Price = 4, UnitsInStock = 10, DepartmentName = "?" });
 
+        }
+
+        
+
+
+        [HttpGet("getAllProductsFromDB")]
+        public JsonResult getAllProductsFromDB()
+        {
             return new JsonResult(ProductList);
         }
 
@@ -28,7 +38,7 @@ namespace WebApi.Controllers
         [HttpPost("addProductToDB")]
         public JsonResult addProductToDB(string name, int price, int unitsInStock, string DepartmentName)
         {
-            ProductList.Add(new Product() { Id = Counter + 1, Name = name, Price = price, UnitsInStock = unitsInStock, DepartmentName = DepartmentName });
+            ProductList.Add(new Product() { Id = 5, Name = name, Price = price, UnitsInStock = unitsInStock, DepartmentName = DepartmentName });
             return new JsonResult("OK");
         }
 

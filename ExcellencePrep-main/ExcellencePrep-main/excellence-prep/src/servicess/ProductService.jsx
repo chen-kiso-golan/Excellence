@@ -15,7 +15,8 @@ export const getAllProductsFromDB = async () => {
   try {
     console.log("servicess - ProductService - getAllProductsFromDB ran Successfully");
     let endpoint = await axios.get(`${ServerAddress}/getAllProductsFromDB`);
-    return endpoint;
+    return endpoint.data;
+    console.log("getAllProductsFromDB:" + endpoint.data);
   } catch (ex) {
     console.log(`An Exception occurred while initializing the getAllProductsFromDB Service : ${ex}`);
   }

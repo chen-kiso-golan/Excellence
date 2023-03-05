@@ -6,7 +6,7 @@ export function ChooseDepartmentRow({ chooseDepartment }) {
 
   const getDB = async () => {
     let result = await getAllDepartmentFromDB();
-    setAllDepartment(result.data);
+    setAllDepartment(result);
   };
 
   useEffect(() => {
