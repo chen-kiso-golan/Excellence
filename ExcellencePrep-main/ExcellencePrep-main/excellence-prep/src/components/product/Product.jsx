@@ -25,7 +25,6 @@ function Product(props) {
       return;
     } else {
       handleAddData();
-      console.log("dats was sent");
     }
     setFormData({
       name: "",

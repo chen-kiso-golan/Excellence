@@ -31,14 +31,14 @@ namespace WebApi.Controllers
 
         
         [HttpPost("addDepartmentToDB")]
-        public JsonResult addDepartmentToDB(string name, string description)
+        public JsonResult addDepartmentToDB([FromBody] Department department)
         {
-            DepartmentList.Add(new Department() { Id = 5 , Name = name, Description = description });
+            DepartmentList.Add(new Department() { Id = 5 , Name = department.Name, Description = department.Description });
             return new JsonResult("OK");
         }
 
         
-        [HttpDelete("deleteDepartmentFromDB/{id}")]
+        [HttpDelete("deleteDepartment/{id}")]
         public JsonResult deleteDepartmentFromDB(int id)
         {
             Department department = DepartmentList?.Find(d => d.Id == id);
@@ -54,15 +54,15 @@ namespace WebApi.Controllers
             }
         }
 
-        [HttpPut("updateDepartment/{id}")]
-        public JsonResult updateDepartment(int id, string name, string description)
+        [HttpPost("UpdateDepartment")]
+        public JsonResult updateDepartment([FromBody] Department department)
         {
-            Department department = DepartmentList?.FirstOrDefault(d => d.Id == id);
+            Department Department = DepartmentList?.FirstOrDefault(d => d.Id == department.Id);
 
             if (department != null)
             {
-                department.Name = name;
-                department.Description = description;
+                Department.Name = department.Name;
+                Department.Description = department.Description;
                 return new JsonResult("OK");
             }
             else

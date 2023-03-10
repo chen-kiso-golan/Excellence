@@ -22,19 +22,19 @@ export const getAllProductsFromDB = async () => {
   }
 };
 
-export const deleteProduct = async (Code) => {
+export const deleteProduct = async (id) => {
   try {
     console.log("services - ProductServices - deleteProduct ran Successfully");
-    await axios.delete(`${ServerAddress}/deleteProduct/${Code}`);
+    await axios.delete(`${ServerAddress}/deleteProduct/${id}`);
   } catch (ex) {
     console.log(`An Exception occurred while initializing the deleteProduct Service : ${ex}`);
   }
 };
 
-export const UpdateProduct = async (Product) => {
+export const UpdateProduct = async (product) => {
   try {
     console.log("servicess - ProductService - UpdateProduct ran Successfully");
-    await axios.post(`${ServerAddress}/UpdateProduct`, Product);
+    await axios.post(`${ServerAddress}/UpdateProduct`, product);
   } catch (ex) {
     console.log(`An Exception occurred while initializing the UpdateProduct Service : ${ex}`);
   }

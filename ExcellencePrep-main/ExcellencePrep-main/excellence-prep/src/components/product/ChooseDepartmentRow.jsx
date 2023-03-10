@@ -22,7 +22,7 @@ export function ChooseDepartmentRow({ chooseDepartment }) {
         <option defaultValue={"Choose The Department"}>Choose The Department</option>
         {AllDepartment.length > 0 ? (
           AllDepartment.map((Department) => {
-            return <>{<option value={Department.Department}>{Department.Department}</option>}</>;
+            return <>{<option value={Department.name}>{Department.name}</option>}</>;
           })
         ) : (
           <option value="1">There are no Departments.</option>

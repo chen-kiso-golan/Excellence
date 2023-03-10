@@ -36,9 +36,9 @@ namespace WebApi.Controllers
 
 
         [HttpPost("addProductToDB")]
-        public JsonResult addProductToDB(string name, int price, int unitsInStock, string DepartmentName)
+        public JsonResult addProductToDB([FromBody] Product product)
         {
-            ProductList.Add(new Product() { Id = 5, Name = name, Price = price, UnitsInStock = unitsInStock, DepartmentName = DepartmentName });
+            ProductList.Add(new Product() { Id = 5, Name = product.Name, Price = product.Price, UnitsInStock = product.UnitsInStock, DepartmentName = product.DepartmentName });
             return new JsonResult("OK");
         }
 
@@ -61,17 +61,18 @@ namespace WebApi.Controllers
 
 
         
-        [HttpPut("UpdateProduct/{id}")]
-        public JsonResult UpdateProduct(int id, string name, int price, int unitsInStock, string DepartmentName)
+        [HttpPost("UpdateProduct")]
+        public JsonResult UpdateProduct([FromBody] Product product)
         {
-            Product Product = ProductList?.FirstOrDefault(d => d.Id == id);
+        
+            Product Product = ProductList?.FirstOrDefault(p => p.Id == product.Id);
 
             if (Product != null)
             {
-                Product.Name = name;
-                Product.Price = price;
-                Product.UnitsInStock = unitsInStock;
-                Product.DepartmentName = DepartmentName;
+                Product.Name = product.Name;
+                Product.Price = product.Price;
+                Product.UnitsInStock = product.UnitsInStock;
+                Product.DepartmentName = product.DepartmentName;
                 return new JsonResult("OK");
             }
             else

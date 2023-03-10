@@ -7,9 +7,9 @@ export const DepartmentReportEdit = () => {
   const location = useLocation();
   const { Department } = location.state;
 
-  const [Id, setId] = useState(Department.Id);
-  const [Name, setName] = useState(Department.Name);
-  const [Description, setDescription] = useState(Department.Description);
+  const [Id, setId] = useState(Department.id);
+  const [Name, setName] = useState(Department.name);
+  const [Description, setDescription] = useState(Department.description);
 
   const handleSubmit = async (event) => {
     event.preventDefault();

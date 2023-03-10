@@ -7,11 +7,11 @@ export const ProductsReportEdit = () => {
   const location = useLocation();
   const { Product } = location.state;
 
-  const [Id, setId] = useState(Product.Id);
-  const [Name, setName] = useState(Product.Name);
-  const [Price, setPrice] = useState(Product.Price);
-  const [UnitsInStock, setUnitsInStock] = useState(Product.UnitsInStock);
-  const [DepartmentName, setDepartmentName] = useState(Product.DepartmentName);
+  const [Id, setId] = useState(Product.id);
+  const [Name, setName] = useState(Product.name);
+  const [Price, setPrice] = useState(Product.price);
+  const [UnitsInStock, setUnitsInStock] = useState(Product.unitsInStock);
+  const [DepartmentName, setDepartmentName] = useState(Product.departmentName);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
