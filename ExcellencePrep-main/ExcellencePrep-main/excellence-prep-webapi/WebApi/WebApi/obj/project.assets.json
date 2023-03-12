@@ -120,6 +120,24 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Market.Model/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Market.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Market.Model.dll": {}
+        }
+      },
+      "Utilities_Log/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Utilities_Log.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utilities_Log.dll": {}
+        }
       }
     }
   },
@@ -494,13 +512,25 @@
         "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Market.Model/1.0.0": {
+      "type": "project",
+      "path": "../Market.Model/Market.Model.csproj",
+      "msbuildProject": "../Market.Model/Market.Model.csproj"
+    },
+    "Utilities_Log/1.0.0": {
+      "type": "project",
+      "path": "../Utilities_Log/Utilities_Log.csproj",
+      "msbuildProject": "../Utilities_Log/Utilities_Log.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Market.Model >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.0",
       "Newtonsoft.Json >= 13.0.2",
-      "Swashbuckle.AspNetCore >= 6.4.0"
+      "Swashbuckle.AspNetCore >= 6.4.0",
+      "Utilities_Log >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -529,7 +559,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj": {
+              "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj"
+            },
+            "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Utilities_Log\\Utilities_Log.csproj": {
+              "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Utilities_Log\\Utilities_Log.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,4 +1,4 @@
-﻿namespace WebApi.Models
+﻿namespace Market.Model
 {
     public class Product
     {

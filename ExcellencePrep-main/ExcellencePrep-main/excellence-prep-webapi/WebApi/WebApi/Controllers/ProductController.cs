@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Market.Model;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics.Metrics;
 using System.Xml.Linq;
-using WebApi.Models;
+
 
 namespace WebApi.Controllers
 {
