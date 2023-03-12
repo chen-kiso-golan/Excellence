@@ -1,0 +1,2 @@
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql\obj\Debug\Market.Data.Sql.csproj.AssemblyReference.cache
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql\obj\Debug\Market.Data.Sql.csproj.CoreCompileInputs.cache

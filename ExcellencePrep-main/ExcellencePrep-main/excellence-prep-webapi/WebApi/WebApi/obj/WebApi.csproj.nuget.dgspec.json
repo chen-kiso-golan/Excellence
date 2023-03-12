@@ -4,6 +4,31 @@
     "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
+    "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql\\Market.Data.Sql.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql\\Market.Data.Sql.csproj",
+        "projectName": "Market.Data.Sql",
+        "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql\\Market.Data.Sql.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj": {
+                "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj"
+              },
+              "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Utilities_Log\\Utilities_Log.csproj": {
+                "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Utilities_Log\\Utilities_Log.csproj"
+              },
+              "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\WebApi.Dal\\Market.Dal.csproj": {
+                "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\WebApi.Dal\\Market.Dal.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Entities\\Market.Entities.csproj": {
       "restore": {
         "projectUniqueName": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Entities\\Market.Entities.csproj",
@@ -12,6 +37,12 @@
         "frameworks": {
           "net472": {
             "projectReferences": {
+              "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql\\Market.Data.Sql.csproj": {
+                "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql\\Market.Data.Sql.csproj"
+              },
+              "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj": {
+                "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj"
+              },
               "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Utilities_Log\\Utilities_Log.csproj": {
                 "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Utilities_Log\\Utilities_Log.csproj"
               }
@@ -46,6 +77,28 @@
         "frameworks": {
           "net472": {
             "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\WebApi.Dal\\Market.Dal.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\WebApi.Dal\\Market.Dal.csproj",
+        "projectName": "Market.Dal",
+        "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\WebApi.Dal\\Market.Dal.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj": {
+                "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj"
+              },
+              "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Utilities_Log\\Utilities_Log.csproj": {
+                "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Utilities_Log\\Utilities_Log.csproj"
+              }
+            }
           }
         }
       },

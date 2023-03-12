@@ -13,8 +13,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Market.Data.Sql\Market.Data.Sql.csproj" />
+    <ProjectReference Include="..\Market.Entities\Market.Entities.csproj" />
     <ProjectReference Include="..\Market.Model\Market.Model.csproj" />
     <ProjectReference Include="..\Utilities_Log\Utilities_Log.csproj" />
+    <ProjectReference Include="..\WebApi.Dal\Market.Dal.csproj" />
   </ItemGroup>
 
 </Project>

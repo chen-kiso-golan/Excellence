@@ -6,29 +6,33 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Utilities_Log;
 
 namespace Market.Entities
 {
-    public class DepartmentManager //: BaseEntity
+    public class DepartmentManager : BaseEntity
     {
-        //public ProductsManager(LogManager log) : base(log)
-        //{
-        //    BaseDataSql = new BaseDataSql(Log);
-        //}
+        BaseDataSql BaseDataSql;
+        public DepartmentManager(LogManager log) : base(log)
+        {
+            BaseDataSql = new BaseDataSql(Log);
+        }
+
+
 
         public List<Department> DepartmentTable = new List<Department>();
-        public DataTable ShowAllDepartmentFromDB()
+        public List<Department> ShowAllDepartmentFromDB()
         {
             try
             {
-                //Log.LogEvent(@"Entities \ DepartmentManager \ ShowAllDepartmentFromDB ran Successfully - ");
+                Log.LogEvent(@"Entities \ DepartmentManager \ ShowAllDepartmentFromDB ran Successfully - ");
                 DepartmentTable.Clear();
-                DepartmentDS departmentDS = new DepartmentDS(log);
+                DepartmentDS departmentDS = new DepartmentDS(Log);
                 return DepartmentTable = departmentDS.ReadAllDepartmentFromDB();
             }
             catch (Exception ex)
             {
-                //Log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
+                Log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
             }
             return DepartmentTable;
         }

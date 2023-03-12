@@ -121,9 +121,38 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "Market.Dal/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Market.Model": "1.0.0",
+          "Utilities_Log": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Market.Dal.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Market.Dal.dll": {}
+        }
+      },
+      "Market.Data.Sql/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Market.Dal": "1.0.0",
+          "Market.Model": "1.0.0",
+          "Utilities_Log": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Market.Data.Sql.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Market.Data.Sql.dll": {}
+        }
+      },
       "Market.Entities/1.0.0": {
         "type": "project",
         "dependencies": {
+          "Market.Data.Sql": "1.0.0",
+          "Market.Model": "1.0.0",
           "Utilities_Log": "1.0.0"
         },
         "compile": {
@@ -524,6 +553,16 @@
         "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Market.Dal/1.0.0": {
+      "type": "project",
+      "path": "../WebApi.Dal/Market.Dal.csproj",
+      "msbuildProject": "../WebApi.Dal/Market.Dal.csproj"
+    },
+    "Market.Data.Sql/1.0.0": {
+      "type": "project",
+      "path": "../Market.Data.Sql/Market.Data.Sql.csproj",
+      "msbuildProject": "../Market.Data.Sql/Market.Data.Sql.csproj"
     },
     "Market.Entities/1.0.0": {
       "type": "project",

@@ -46,6 +46,10 @@
     <Compile Include="SqlDB.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Market.Model\Market.Model.csproj">
+      <Project>{2664bf57-988b-400a-a404-c9243d92e813}</Project>
+      <Name>Market.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Utilities_Log\Utilities_Log.csproj">
       <Project>{759d9926-646c-43c7-b148-8b0a0dc2d5f1}</Project>
       <Name>Utilities_Log</Name>

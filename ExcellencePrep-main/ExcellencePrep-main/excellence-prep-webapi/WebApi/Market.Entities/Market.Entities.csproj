@@ -41,17 +41,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseEntity.cs" />
     <Compile Include="BasePromotionSystem.cs" />
+    <Compile Include="DepartmentManager.cs" />
+    <Compile Include="MainManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Market.Data.Sql\Market.Data.Sql.csproj">
+      <Project>{f56d1373-f515-4295-ac12-ab006e74672b}</Project>
+      <Name>Market.Data.Sql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Market.Model\Market.Model.csproj">
+      <Project>{2664BF57-988B-400A-A404-C9243D92E813}</Project>
+      <Name>Market.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Utilities_Log\Utilities_Log.csproj">
       <Project>{759d9926-646c-43c7-b148-8b0a0dc2d5f1}</Project>
       <Name>Utilities_Log</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WebApi\WebApi.csproj">
-      <Project>{ad6430d8-8237-4285-87be-cd6f0887ffec}</Project>
-      <Name>WebApi</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//using static Utilities.LogManager;
-//using Utilities.LogManager;
-//using Utilities;
+using Utilities_Log;
+using static Utilities_Log.LogManager;
 
 namespace Market.Entities
 {
     public class MainManager
     {
         private static readonly MainManager instance = new MainManager();
-
         public static MainManager Instance { get { return instance; } }
 
 
-        //public LogManager log;
+
+        public LogManager log;
 
         public DepartmentManager DepartmentManager;
 
@@ -32,7 +31,7 @@ namespace Market.Entities
         {
             try
             {
-                //log = new LogManager(providerType.File);
+                log = new LogManager(providerType.File);
                 DepartmentManager = new DepartmentManager(log);
                 log.LogEvent(@"Entities \ MainManager \ AppDomainInitializer ran Successfully - ");
             }
