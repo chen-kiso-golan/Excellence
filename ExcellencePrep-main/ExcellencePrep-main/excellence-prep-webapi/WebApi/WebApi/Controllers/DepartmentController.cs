@@ -1,21 +1,22 @@
-﻿using Market.Model;
+﻿using Market.Entities;
+using Market.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-
+using System.Data;
+using Utilities_Log;
 
 namespace WebApi.Controllers
 {
     [ApiController]
     [Route("api/Department")]
-    public class DepartmentController : Controller
+    public class DepartmentController : Controller 
     {
 
-        public static List<Department> DepartmentList = new List<Department>();
-        //public static int? Counter = DepartmentList?.Max(d => d.Id);
 
         public DepartmentController()
         {
+
             DepartmentList.Clear();
             DepartmentList.Add(new Department() { Id = 1, Name = "Toys" });
             DepartmentList.Add(new Department() { Id = 2, Name = "Food" });
@@ -23,11 +24,27 @@ namespace WebApi.Controllers
             DepartmentList.Add(new Department() { Id = 4, Name = "Snacks" });
         }
 
+        public List<Department> DepartmentList;
+
 
         [HttpGet("getAllDepartmentFromDB")]
-        public JsonResult getAllDepartmentFromDB()
+        public List<Department> getAllDepartmentFromDB()
         {
-            return new JsonResult(DepartmentList);
+            try
+            {
+                MainManager.Instance.log.LogEvent(@"WebApi \ DepartmentController ran Successfully - ");
+                DepartmentList = new List<Department>();
+                DepartmentList = MainManager.Instance.DepartmentManager.ShowAllDepartmentFromDB();
+                return DepartmentList;
+            }
+    
+            catch (Exception ex)
+            {
+                MainManager.Instance.log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
+            }
+
+            return DepartmentList;
+            //return new JsonResult(DepartmentList);
         }
 
         

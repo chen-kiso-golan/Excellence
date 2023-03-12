@@ -16,7 +16,7 @@ namespace Market.Dal
 
         }
 
-        public static string ConnectionString = @"Integrated Security=SSPI;   Persist Security Info=False;    Initial Catalog=ProjectGiveBack;  Data Source=localhost\sqlexpress";
+        public static string ConnectionString = @"Integrated Security=SSPI;   Persist Security Info=False;    Initial Catalog=Market;  Data Source=localhost\sqlexpress";
 
         public static DataTable ReadFormDB(string Sql_Query)
         {

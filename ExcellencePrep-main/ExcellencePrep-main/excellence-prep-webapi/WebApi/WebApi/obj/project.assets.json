@@ -121,6 +121,18 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "Market.Entities/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Utilities_Log": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Market.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Market.Entities.dll": {}
+        }
+      },
       "Market.Model/1.0.0": {
         "type": "project",
         "compile": {
@@ -513,6 +525,11 @@
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
+    "Market.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Market.Entities/Market.Entities.csproj",
+      "msbuildProject": "../Market.Entities/Market.Entities.csproj"
+    },
     "Market.Model/1.0.0": {
       "type": "project",
       "path": "../Market.Model/Market.Model.csproj",
@@ -526,6 +543,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Market.Entities >= 1.0.0",
       "Market.Model >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.0",
       "Newtonsoft.Json >= 13.0.2",
@@ -560,6 +578,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Entities\\Market.Entities.csproj": {
+              "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Entities\\Market.Entities.csproj"
+            },
             "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj": {
               "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj"
             },

@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{AD6430D8-8237-4285-87BE-CD6F0887FFEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{AD6430D8-8237-4285-87BE-CD6F0887FFEC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Market.Dal", "WebApi.Dal\Market.Dal.csproj", "{B19B01C7-A257-4F34-9AFE-D3F9F6D65573}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities_Log", "Utilities_Log\Utilities_Log.csproj", "{759D9926-646C-43C7-B148-8B0A0DC2D5F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Market.Model", "Market.Model\Market.Model.csproj", "{2664BF57-988B-400A-A404-C9243D92E813}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Market.Entities", "Market.Entities\Market.Entities.csproj", "{21C92444-8F72-4600-BA2B-7363DE0B8A96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{B19B01C7-A257-4F34-9AFE-D3F9F6D65573}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B19B01C7-A257-4F34-9AFE-D3F9F6D65573}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B19B01C7-A257-4F34-9AFE-D3F9F6D65573}.Release|Any CPU.Build.0 = Release|Any CPU
+		{759D9926-646C-43C7-B148-8B0A0DC2D5F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{759D9926-646C-43C7-B148-8B0A0DC2D5F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{759D9926-646C-43C7-B148-8B0A0DC2D5F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{759D9926-646C-43C7-B148-8B0A0DC2D5F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2664BF57-988B-400A-A404-C9243D92E813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2664BF57-988B-400A-A404-C9243D92E813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2664BF57-988B-400A-A404-C9243D92E813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2664BF57-988B-400A-A404-C9243D92E813}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21C92444-8F72-4600-BA2B-7363DE0B8A96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21C92444-8F72-4600-BA2B-7363DE0B8A96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21C92444-8F72-4600-BA2B-7363DE0B8A96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21C92444-8F72-4600-BA2B-7363DE0B8A96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
