@@ -1,2 +1,6 @@
 C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Model\obj\Debug\Market.Model.csproj.AssemblyReference.cache
 C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Model\obj\Debug\Market.Model.csproj.CoreCompileInputs.cache
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Model\bin\Debug\Market.Model.dll
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Model\bin\Debug\Market.Model.pdb
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Model\obj\Debug\Market.Model.dll
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Model\obj\Debug\Market.Model.pdb

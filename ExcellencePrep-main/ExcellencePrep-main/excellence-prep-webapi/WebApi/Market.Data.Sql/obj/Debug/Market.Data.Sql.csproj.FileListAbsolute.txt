@@ -1,2 +1,13 @@
 C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql\obj\Debug\Market.Data.Sql.csproj.AssemblyReference.cache
 C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql\obj\Debug\Market.Data.Sql.csproj.CoreCompileInputs.cache
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql\bin\Debug\Market.Data.Sql.dll
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql\bin\Debug\Market.Data.Sql.pdb
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql\bin\Debug\Market.Model.dll
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql\bin\Debug\Utilities_Log.dll
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql\bin\Debug\WebApi.Dal.dll
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql\bin\Debug\Market.Model.pdb
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql\bin\Debug\Utilities_Log.pdb
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql\bin\Debug\WebApi.Dal.pdb
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql\obj\Debug\Market.Data.Sql.csproj.CopyComplete
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql\obj\Debug\Market.Data.Sql.dll
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql\obj\Debug\Market.Data.Sql.pdb

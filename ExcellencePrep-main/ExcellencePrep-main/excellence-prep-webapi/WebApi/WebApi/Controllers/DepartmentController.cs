@@ -17,11 +17,11 @@ namespace WebApi.Controllers
         public DepartmentController()
         {
 
-            DepartmentList.Clear();
-            DepartmentList.Add(new Department() { Id = 1, Name = "Toys" });
-            DepartmentList.Add(new Department() { Id = 2, Name = "Food" });
-            DepartmentList.Add(new Department() { Id = 3, Name = "Drinks" });
-            DepartmentList.Add(new Department() { Id = 4, Name = "Snacks" });
+            //DepartmentList.Clear();
+            //DepartmentList.Add(new Department() { Id = 1, Name = "Toys" });
+            //DepartmentList.Add(new Department() { Id = 2, Name = "Food" });
+            //DepartmentList.Add(new Department() { Id = 3, Name = "Drinks" });
+            //DepartmentList.Add(new Department() { Id = 4, Name = "Snacks" });
         }
 
         public List<Department> DepartmentList;
