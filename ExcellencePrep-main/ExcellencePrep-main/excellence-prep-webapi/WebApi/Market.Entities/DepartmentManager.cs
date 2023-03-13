@@ -38,5 +38,54 @@ namespace Market.Entities
         }
 
 
+
+        public void addDepartmentToDB(Department department)
+        {
+            try
+            {
+                Log.LogEvent(@"Entities \ DepartmentManager \ addDepartmentToDB ran Successfully - ");
+                DepartmentDS departmentDS = new DepartmentDS(Log);
+                departmentDS.addDepartmentToDB(department);
+            }
+            catch (Exception ex)
+            {
+                Log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
+            }
+        }
+
+
+
+        
+
+        public void deleteDepartmentFromDB(int id)
+        {
+            try
+            {
+                Log.LogEvent(@"Entities \ DepartmentManager \ deleteDepartmentFromDB ran Successfully - ");
+                DepartmentDS departmentDS = new DepartmentDS(Log);
+                departmentDS.deleteDepartmentFromDB(id);
+            }
+            catch (Exception ex)
+            {
+                Log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
+            }
+        }
+
+
+
+        
+        public void updateDepartment(Department department)
+        {
+            try
+            {
+                Log.LogEvent(@"Entities \ DepartmentManager \ updateDepartment ran Successfully - ");
+                DepartmentDS departmentDS = new DepartmentDS(Log);
+                departmentDS.updateDepartment(department);
+            }
+            catch (Exception ex)
+            {
+                Log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
+            }
+        }
     }
 }

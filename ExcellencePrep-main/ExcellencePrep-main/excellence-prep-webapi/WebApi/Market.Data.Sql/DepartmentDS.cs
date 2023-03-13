@@ -38,7 +38,53 @@ namespace Market.Data.Sql
 
 
 
+        public void addDepartmentToDB(Department department)
+        {
+            try
+            {
+                Log.LogEvent(@"Data.Sql \ DepartmentDS \ addDepartmentToDB ran Successfully - ");
+                string SQLquery = "insert into Departments values ('" + department.Name + "','" + department.Description + "')";
+                SqlDB.WriteToDB(SQLquery);
+            }
+            catch (Exception ex)
+            {
+                Log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
+            }
+        }
 
+
+
+        
+        public void deleteDepartmentFromDB(int id)
+        {
+            try
+            {
+                Log.LogEvent(@"Data.Sql \ DepartmentDS \ deleteDepartmentFromDB ran Successfully - ");
+                string SQLquery = "delete from Departments where id = " + id;
+                SqlDB.WriteToDB(SQLquery);
+            }
+            catch (Exception ex)
+            {
+                Log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
+            }
+        }
+
+
+
+
+        public void updateDepartment(Department department)
+        {
+            try
+            {
+                Log.LogEvent(@"Data.Sql \ DepartmentDS \ updateDepartment ran Successfully - ");
+                string SQLquery = "update Departments set name = '" + department.Name + "', description = '" + department.Description + "' where id = " + department.Id.ToString();
+                SqlDB.WriteToDB(SQLquery);
+            }
+            catch (Exception ex)
+            {
+                Log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
+            }
+        }
 
 
 

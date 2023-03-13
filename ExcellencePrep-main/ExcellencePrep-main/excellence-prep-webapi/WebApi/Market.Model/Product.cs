@@ -6,6 +6,6 @@
         public string Name { get; set; }
         public int Price { get; set; }
         public int UnitsInStock { get; set; }
-        public string DepartmentName { get; set; }
+        public int DepartmentId { get; set; }
     }
 }

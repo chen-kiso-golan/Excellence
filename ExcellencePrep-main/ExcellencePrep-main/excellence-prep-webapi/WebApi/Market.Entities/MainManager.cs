@@ -19,6 +19,7 @@ namespace Market.Entities
 
         public DepartmentManager DepartmentManager;
 
+        public ProductManager ProductManager;
 
 
 
@@ -33,6 +34,7 @@ namespace Market.Entities
             {
                 log = new LogManager(providerType.File);
                 DepartmentManager = new DepartmentManager(log);
+                ProductManager = new ProductManager(log);
                 log.LogEvent(@"Entities \ MainManager \ AppDomainInitializer ran Successfully - ");
             }
             catch (Exception ex)

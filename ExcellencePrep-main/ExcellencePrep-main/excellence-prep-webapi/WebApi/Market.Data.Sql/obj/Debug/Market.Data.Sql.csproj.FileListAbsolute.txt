@@ -11,3 +11,5 @@ C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main
 C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql\obj\Debug\Market.Data.Sql.csproj.CopyComplete
 C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql\obj\Debug\Market.Data.Sql.dll
 C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql\obj\Debug\Market.Data.Sql.pdb
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql\bin\Debug\System.Data.SqlClient.dll
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql\bin\Debug\System.Data.SqlClient.xml
