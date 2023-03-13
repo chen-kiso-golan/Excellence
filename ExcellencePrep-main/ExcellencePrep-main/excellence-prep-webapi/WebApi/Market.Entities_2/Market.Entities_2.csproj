@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Market.Data.Sql_2\Market.Data.Sql_2.csproj" />
+    <ProjectReference Include="..\Market.Model\Market.Model.csproj" />
+    <ProjectReference Include="..\Utilities_Log\Utilities_Log.csproj" />
+  </ItemGroup>
+
+</Project>

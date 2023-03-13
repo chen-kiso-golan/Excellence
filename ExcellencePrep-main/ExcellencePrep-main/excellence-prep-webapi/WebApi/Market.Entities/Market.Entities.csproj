@@ -52,9 +52,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Market.Data.Sql\Market.Data.Sql.csproj">
-      <Project>{f56d1373-f515-4295-ac12-ab006e74672b}</Project>
-      <Name>Market.Data.Sql</Name>
+    <ProjectReference Include="..\Market.Data.Sql_2\Market.Data.Sql_2.csproj">
+      <Project>{a875512d-cc07-4207-92ca-5d7a69663fae}</Project>
+      <Name>Market.Data.Sql_2</Name>
     </ProjectReference>
     <ProjectReference Include="..\Market.Model\Market.Model.csproj">
       <Project>{2664BF57-988B-400A-A404-C9243D92E813}</Project>

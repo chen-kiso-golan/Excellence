@@ -11,11 +11,11 @@ export const ProductsReportEdit = () => {
   const [Name, setName] = useState(Product.name);
   const [Price, setPrice] = useState(Product.price);
   const [UnitsInStock, setUnitsInStock] = useState(Product.unitsInStock);
-  const [DepartmentName, setDepartmentName] = useState(Product.departmentName);
+  const [DepartmentId, setDepartmentName] = useState(Product.departmentId);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    if (Name === "" || Price === "" || UnitsInStock === "" || DepartmentName === "") {
+    if (Name === "" || Price === "" || UnitsInStock === "" || DepartmentId === "") {
       alert("Please fill all fields");
     } else {
       const updatedProduct = {
@@ -24,7 +24,7 @@ export const ProductsReportEdit = () => {
         name: Name,
         price: parseInt(Price),
         unitsInStock: parseInt(UnitsInStock),
-        departmentName: DepartmentName,
+        departmentId: DepartmentId,
       };
       await UpdateProduct(updatedProduct);
       alert("Product Was Updated");
@@ -64,10 +64,10 @@ export const ProductsReportEdit = () => {
           <input type="number" className="form-control" id="UnitsInStock" value={UnitsInStock} onChange={(event) => setUnitsInStock(event.target.value)} />
         </div>
         <div className="form-group">
-          <label htmlFor="DepartmentName" className="frm-lbl">
+          <label htmlFor="DepartmentId" className="frm-lbl">
             Department Name:
           </label>
-          <input type="text" className="form-control" id="DepartmentName" value={DepartmentName} onChange={(event) => setDepartmentName(event.target.value)} />
+          <input type="text" className="form-control" id="DepartmentId" value={DepartmentId} onChange={(event) => setDepartmentName(event.target.value)} />
         </div>
         <div>
           <button type="submit" className="btn btn-primary">

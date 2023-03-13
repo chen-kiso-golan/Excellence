@@ -10,6 +10,7 @@ export const ProductsReportRow = (props) => {
   const getDB = async () => {
     let result = await getAllProductsFromDB();
     console.log("result:" + JSON.stringify(result));
+    console.log("result:" + result);
     setAllProducts(result);
   };
 
@@ -34,7 +35,7 @@ export const ProductsReportRow = (props) => {
     <>
       {AllProducts.length > 0 ? (
         AllProducts.map((Product) => {
-          let { id, name, price, unitsInStock, departmentName } = Product;
+          let { id, name, price, unitsInStock, departmentId } = Product;
           return (
             <>
               <tr>
@@ -42,7 +43,7 @@ export const ProductsReportRow = (props) => {
                 <td>{name}</td>
                 <td>{price}</td>
                 <td>{unitsInStock}</td>
-                <td>{departmentName}</td>
+                <td>{departmentId}</td>
                 <td>
                   <button
                     className="btn btn-warning"

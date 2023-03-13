@@ -50,6 +50,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Market.Dal_2\Market.Dal_2.csproj">
+      <Project>{a222d5d9-6d12-4dfb-a64e-fb40920f13af}</Project>
+      <Name>Market.Dal_2</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Market.Model\Market.Model.csproj">
       <Project>{2664BF57-988B-400A-A404-C9243D92E813}</Project>
       <Name>Market.Model</Name>
@@ -57,10 +61,6 @@
     <ProjectReference Include="..\Utilities_Log\Utilities_Log.csproj">
       <Project>{759d9926-646c-43c7-b148-8b0a0dc2d5f1}</Project>
       <Name>Utilities_Log</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WebApi.Dal\Market.Dal.csproj">
-      <Project>{b19b01c7-a257-4f34-9afe-d3f9f6d65573}</Project>
-      <Name>Market.Dal</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

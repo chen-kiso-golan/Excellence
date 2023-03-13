@@ -1,4 +1,4 @@
-﻿using Market.Data.Sql;
+﻿using Market.Data.Sql_2;
 using Market.Entities;
 using Market.Model;
 using Microsoft.AspNetCore.Mvc;
@@ -12,18 +12,11 @@ namespace WebApi.Controllers
     [Route("api/Product")]
     public class ProductController : Controller
     {
-        //public static List<Product> ProductList = new List<Product>();
-        ////public static int? Counter = ProductList?.Max(p => p.Id);
-
+ 
 
         public ProductController()
         {
-            //ProductList.Clear();
-            //ProductList.Add(new Product() { Id = 1, Name = "Doll", Price = 10, UnitsInStock = 5, DepartmentName = "?" });
-            //ProductList.Add(new Product() { Id = 2, Name = "Meat", Price = 20, UnitsInStock = 10, DepartmentName = "?" });
-            //ProductList.Add(new Product() { Id = 3, Name = "Milk", Price = 6, UnitsInStock = 9, DepartmentName = "?" });
-            //ProductList.Add(new Product() { Id = 4, Name = "Cookies", Price = 4, UnitsInStock = 10, DepartmentName = "?" });
-
+            
         }
 
 

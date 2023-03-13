@@ -7,7 +7,7 @@ function Product(props) {
     name: "",
     price: "",
     unitsInStock: "",
-    departmentName: "",
+    departmentId: "",
   });
 
   function handleChange(event) {
@@ -30,7 +30,7 @@ function Product(props) {
       name: "",
       productPrice: "",
       unitsInStock: "",
-      departmentName: "",
+      departmentId: "",
     });
   }
 
@@ -42,7 +42,7 @@ function Product(props) {
   const chooseDepartment = (data) => {
     setFormData((prevFormData) => ({
       ...prevFormData,
-      departmentName: data,
+      departmentId: data,
     }));
   };
 

@@ -1,0 +1,44 @@
+Entities \ MainManager \ AppDomainInitializer ran Successfully - 13/03/2023 17:42:12
+WebApi \ DepartmentController \ getAllDepartmentFromDB ran Successfully - 13/03/2023 17:42:13
+Entities \ DepartmentManager \ ShowAllDepartmentFromDB ran Successfully - 13/03/2023 17:42:14
+Data.Sql \ DepartmentDS \ ReadAllDepartmentFromDB ran Successfully - 13/03/2023 17:42:15
+Dal \ SqlDB \ ReadFormDB ran Successfully - 13/03/2023 17:42:16
+WebApi \ ProductController \ getAllProductsFromDB ran Successfully - 13/03/2023 17:42:17
+Entities \ ProductManager \ getAllProductsFromDB ran Successfully - 13/03/2023 17:42:18
+Data.Sql \ ProductDS \ getAllProductsFromDB ran Successfully - 13/03/2023 17:42:19
+Dal \ SqlDB \ ReadFormDB ran Successfully - 13/03/2023 17:42:20
+An Exception occurred while initializing the    at Market.Data.Sql_2.ProductDS.ConvertDataTableToList(DataTable dataTable) in C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql_2\ProductDS.cs:line 105
+   at Market.Data.Sql_2.ProductDS.getAllProductsFromDB() in C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql_2\ProductDS.cs:line 31 : Unable to cast object of type 'System.Decimal' to type 'System.Int32'.13/03/2023 17:42:21
+WebApi \ ProductController \ getAllProductsFromDB ran Successfully - 13/03/2023 17:42:22
+Entities \ ProductManager \ getAllProductsFromDB ran Successfully - 13/03/2023 17:42:23
+Data.Sql \ ProductDS \ getAllProductsFromDB ran Successfully - 13/03/2023 17:42:24
+Dal \ SqlDB \ ReadFormDB ran Successfully - 13/03/2023 17:42:25
+WebApi \ DepartmentController \ getAllDepartmentFromDB ran Successfully - 13/03/2023 17:42:26
+Entities \ DepartmentManager \ ShowAllDepartmentFromDB ran Successfully - 13/03/2023 17:42:27
+Data.Sql \ DepartmentDS \ ReadAllDepartmentFromDB ran Successfully - 13/03/2023 17:42:28
+Dal \ SqlDB \ ReadFormDB ran Successfully - 13/03/2023 17:42:29
+An Exception occurred while initializing the    at Market.Data.Sql_2.ProductDS.ConvertDataTableToList(DataTable dataTable) in C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql_2\ProductDS.cs:line 105
+   at Market.Data.Sql_2.ProductDS.getAllProductsFromDB() in C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\Market.Data.Sql_2\ProductDS.cs:line 31 : Unable to cast object of type 'System.Decimal' to type 'System.Int32'.13/03/2023 17:42:30
+WebApi \ DepartmentController \ getAllDepartmentFromDB ran Successfully - 13/03/2023 17:42:31
+Entities \ DepartmentManager \ ShowAllDepartmentFromDB ran Successfully - 13/03/2023 17:42:32
+Data.Sql \ DepartmentDS \ ReadAllDepartmentFromDB ran Successfully - 13/03/2023 17:42:33
+Dal \ SqlDB \ ReadFormDB ran Successfully - 13/03/2023 17:42:34
+WebApi \ DepartmentController \ getAllDepartmentFromDB ran Successfully - 13/03/2023 17:42:35
+Entities \ DepartmentManager \ ShowAllDepartmentFromDB ran Successfully - 13/03/2023 17:42:36
+Data.Sql \ DepartmentDS \ ReadAllDepartmentFromDB ran Successfully - 13/03/2023 17:42:37
+Dal \ SqlDB \ ReadFormDB ran Successfully - 13/03/2023 17:42:38
+WebApi \ DepartmentController \ getAllDepartmentFromDB ran Successfully - 13/03/2023 17:43:10
+Entities \ DepartmentManager \ ShowAllDepartmentFromDB ran Successfully - 13/03/2023 17:43:22
+Data.Sql \ DepartmentDS \ ReadAllDepartmentFromDB ran Successfully - 13/03/2023 17:43:27
+Dal \ SqlDB \ ReadFormDB ran Successfully - 13/03/2023 17:43:37
+WebApi \ DepartmentController \ getAllDepartmentFromDB ran Successfully - 13/03/2023 17:43:57
+Entities \ DepartmentManager \ ShowAllDepartmentFromDB ran Successfully - 13/03/2023 17:44:03
+Data.Sql \ DepartmentDS \ ReadAllDepartmentFromDB ran Successfully - 13/03/2023 17:44:11
+Dal \ SqlDB \ ReadFormDB ran Successfully - 13/03/2023 17:44:22
+WebApi \ DepartmentController \ getAllDepartmentFromDB ran Successfully - 13/03/2023 17:44:30
+Entities \ DepartmentManager \ ShowAllDepartmentFromDB ran Successfully - 13/03/2023 17:44:49
+Data.Sql \ DepartmentDS \ ReadAllDepartmentFromDB ran Successfully - 13/03/2023 18:15:00
+Dal \ SqlDB \ ReadFormDB ran Successfully - 13/03/2023 18:15:26
+WebApi \ ProductController \ getAllProductsFromDB ran Successfully - 13/03/2023 18:15:31
+WebApi \ DepartmentController \ getAllDepartmentFromDB ran Successfully - 13/03/2023 18:15:33
+Entities \ DepartmentManager \ ShowAllDepartmentFromDB ran Successfully - 13/03/2023 18:15:40

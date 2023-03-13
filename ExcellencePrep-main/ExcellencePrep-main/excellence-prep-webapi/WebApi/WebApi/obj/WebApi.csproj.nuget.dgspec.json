@@ -4,41 +4,100 @@
     "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql\\Market.Data.Sql.csproj": {
+    "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Dal_2\\Market.Dal_2.csproj": {
+      "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql\\Market.Data.Sql.csproj",
-        "projectName": "Market.Data.Sql",
-        "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql\\Market.Data.Sql.csproj",
+        "projectUniqueName": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Dal_2\\Market.Dal_2.csproj",
+        "projectName": "Market.Dal_2",
+        "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Dal_2\\Market.Dal_2.csproj",
+        "packagesPath": "C:\\Users\\behap\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Dal_2\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\behap\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
         "frameworks": {
-          "net472": {
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {
               "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj": {
                 "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj"
               },
               "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Utilities_Log\\Utilities_Log.csproj": {
                 "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Utilities_Log\\Utilities_Log.csproj"
-              },
-              "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\WebApi.Dal\\Market.Dal.csproj": {
-                "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\WebApi.Dal\\Market.Dal.csproj"
               }
             }
           }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
         }
       },
       "frameworks": {
-        "net472": {}
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
       }
     },
-    "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Entities\\Market.Entities.csproj": {
+    "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql_2\\Market.Data.Sql_2.csproj": {
+      "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Entities\\Market.Entities.csproj",
-        "projectName": "Market.Entities",
-        "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Entities\\Market.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql_2\\Market.Data.Sql_2.csproj",
+        "projectName": "Market.Data.Sql_2",
+        "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql_2\\Market.Data.Sql_2.csproj",
+        "packagesPath": "C:\\Users\\behap\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql_2\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\behap\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
         "frameworks": {
-          "net472": {
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql\\Market.Data.Sql.csproj": {
-                "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql\\Market.Data.Sql.csproj"
+              "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Dal_2\\Market.Dal_2.csproj": {
+                "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Dal_2\\Market.Dal_2.csproj"
               },
               "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj": {
                 "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj"
@@ -48,10 +107,99 @@
               }
             }
           }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
         }
       },
       "frameworks": {
-        "net472": {}
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Entities_2\\Market.Entities_2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Entities_2\\Market.Entities_2.csproj",
+        "projectName": "Market.Entities_2",
+        "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Entities_2\\Market.Entities_2.csproj",
+        "packagesPath": "C:\\Users\\behap\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Entities_2\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\behap\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql_2\\Market.Data.Sql_2.csproj": {
+                "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql_2\\Market.Data.Sql_2.csproj"
+              },
+              "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj": {
+                "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj"
+              },
+              "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Utilities_Log\\Utilities_Log.csproj": {
+                "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Utilities_Log\\Utilities_Log.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
       }
     },
     "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj": {
@@ -84,28 +232,6 @@
         "net472": {}
       }
     },
-    "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\WebApi.Dal\\Market.Dal.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\WebApi.Dal\\Market.Dal.csproj",
-        "projectName": "Market.Dal",
-        "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\WebApi.Dal\\Market.Dal.csproj",
-        "frameworks": {
-          "net472": {
-            "projectReferences": {
-              "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj": {
-                "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj"
-              },
-              "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Utilities_Log\\Utilities_Log.csproj": {
-                "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Utilities_Log\\Utilities_Log.csproj"
-              }
-            }
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
     "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -130,8 +256,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Entities\\Market.Entities.csproj": {
-                "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Entities\\Market.Entities.csproj"
+              "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Entities_2\\Market.Entities_2.csproj": {
+                "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Entities_2\\Market.Entities_2.csproj"
               },
               "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj": {
                 "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj"
