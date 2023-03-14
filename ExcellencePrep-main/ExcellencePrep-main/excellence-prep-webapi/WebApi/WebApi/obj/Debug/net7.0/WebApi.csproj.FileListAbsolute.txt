@@ -42,9 +42,9 @@ C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main
 C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\WebApi\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
 C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\WebApi\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\WebApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\WebApi\bin\Debug\net7.0\Market.Dal_2.dll
-C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\WebApi\bin\Debug\net7.0\Market.Data.Sql_2.dll
-C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\WebApi\bin\Debug\net7.0\Market.Entities_2.dll
-C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\WebApi\bin\Debug\net7.0\Market.Entities_2.pdb
-C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\WebApi\bin\Debug\net7.0\Market.Dal_2.pdb
-C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\WebApi\bin\Debug\net7.0\Market.Data.Sql_2.pdb
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\WebApi\bin\Debug\net7.0\Market.Dal.dll
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\WebApi\bin\Debug\net7.0\Market.Data.Sql.dll
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\WebApi\bin\Debug\net7.0\Market.Entities.dll
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\WebApi\bin\Debug\net7.0\Market.Entities.pdb
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\WebApi\bin\Debug\net7.0\Market.Dal.pdb
+C:\Users\behap\Desktop\github\Excellence\ExcellencePrep-main\ExcellencePrep-main\excellence-prep-webapi\WebApi\WebApi\bin\Debug\net7.0\Market.Data.Sql.pdb

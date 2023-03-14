@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Utilities_Log;
 
-namespace Market.Data.Sql_2
+namespace Market.Data.Sql
 {
     public class BaseDataSql
     {

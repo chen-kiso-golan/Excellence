@@ -1,4 +1,4 @@
-﻿using Market.Dal_2;
+﻿using Market.Dal;
 using Market.Model;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using Utilities_Log;
 
-namespace Market.Data.Sql_2
+namespace Market.Data.Sql
 {
     public class DepartmentDS : BaseDataSql
     {

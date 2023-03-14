@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "WebApi/1.0.0": {
         "dependencies": {
-          "Market.Entities_2": "1.0.0",
+          "Market.Entities": "1.0.0",
           "Market.Model": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.0",
           "Newtonsoft.Json": "13.0.2",
@@ -160,34 +160,34 @@
         }
       },
       "System.Security.Principal.Windows/4.7.0": {},
-      "Market.Dal_2/1.0.0": {
+      "Market.Dal/1.0.0": {
         "dependencies": {
           "Market.Model": "1.0.0",
           "System.Data.SqlClient": "4.8.5",
           "Utilities_Log": "1.0.0"
         },
         "runtime": {
-          "Market.Dal_2.dll": {}
+          "Market.Dal.dll": {}
         }
       },
-      "Market.Data.Sql_2/1.0.0": {
+      "Market.Data.Sql/1.0.0": {
         "dependencies": {
-          "Market.Dal_2": "1.0.0",
+          "Market.Dal": "1.0.0",
           "Market.Model": "1.0.0",
           "Utilities_Log": "1.0.0"
         },
         "runtime": {
-          "Market.Data.Sql_2.dll": {}
+          "Market.Data.Sql.dll": {}
         }
       },
-      "Market.Entities_2/1.0.0": {
+      "Market.Entities/1.0.0": {
         "dependencies": {
-          "Market.Data.Sql_2": "1.0.0",
+          "Market.Data.Sql": "1.0.0",
           "Market.Model": "1.0.0",
           "Utilities_Log": "1.0.0"
         },
         "runtime": {
-          "Market.Entities_2.dll": {}
+          "Market.Entities.dll": {}
         }
       },
       "Market.Model/1.0.0": {
@@ -327,17 +327,17 @@
       "path": "system.security.principal.windows/4.7.0",
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
     },
-    "Market.Dal_2/1.0.0": {
+    "Market.Dal/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Market.Data.Sql_2/1.0.0": {
+    "Market.Data.Sql/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Market.Entities_2/1.0.0": {
+    "Market.Entities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

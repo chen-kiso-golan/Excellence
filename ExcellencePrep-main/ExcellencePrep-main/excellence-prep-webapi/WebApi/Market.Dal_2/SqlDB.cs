@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Utilities_Log;
 
-namespace Market.Dal_2
+namespace Market.Dal
 {
     public class SqlDB : BaseDAL
     {

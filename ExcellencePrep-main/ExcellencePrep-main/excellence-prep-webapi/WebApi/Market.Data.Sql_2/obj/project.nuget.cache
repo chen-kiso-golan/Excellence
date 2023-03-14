@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iwW1AWDJcfYbf+6pLPpa5hVhruIHZiTNYkACuB1NMNQkke5zwyN9caueHFRV1aEdskduHZvgmF9hzaUqViZiRQ==",
+  "dgSpecHash": "uJPwRxP+z3e8s8DjdB/1+/2A80no2lA8w6eGmSFHeQ7g5DdJuYtLPdagnxwKRiAdYjHcCtLnykLeW4vAfgjA9A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql_2\\Market.Data.Sql_2.csproj",
+  "projectFilePath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql_2\\Market.Data.Sql.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\behap\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\behap\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

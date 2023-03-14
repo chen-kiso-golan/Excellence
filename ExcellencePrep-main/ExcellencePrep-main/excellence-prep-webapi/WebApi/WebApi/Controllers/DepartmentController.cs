@@ -1,4 +1,4 @@
-﻿using Market.Data.Sql_2;
+﻿using Market.Data.Sql;
 using Market.Entities;
 using Market.Model;
 using Microsoft.AspNetCore.Http;

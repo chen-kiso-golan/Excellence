@@ -266,7 +266,7 @@
           }
         }
       },
-      "Market.Dal_2/1.0.0": {
+      "Market.Dal/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -275,40 +275,40 @@
           "Utilities_Log": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Market.Dal_2.dll": {}
+          "bin/placeholder/Market.Dal.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Market.Dal_2.dll": {}
+          "bin/placeholder/Market.Dal.dll": {}
         }
       },
-      "Market.Data.Sql_2/1.0.0": {
+      "Market.Data.Sql/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "Market.Dal_2": "1.0.0",
+          "Market.Dal": "1.0.0",
           "Market.Model": "1.0.0",
           "Utilities_Log": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Market.Data.Sql_2.dll": {}
+          "bin/placeholder/Market.Data.Sql.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Market.Data.Sql_2.dll": {}
+          "bin/placeholder/Market.Data.Sql.dll": {}
         }
       },
-      "Market.Entities_2/1.0.0": {
+      "Market.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "Market.Data.Sql_2": "1.0.0",
+          "Market.Data.Sql": "1.0.0",
           "Market.Model": "1.0.0",
           "Utilities_Log": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Market.Entities_2.dll": {}
+          "bin/placeholder/Market.Entities.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Market.Entities_2.dll": {}
+          "bin/placeholder/Market.Entities.dll": {}
         }
       },
       "Market.Model/1.0.0": {
@@ -1016,20 +1016,20 @@
         "version.txt"
       ]
     },
-    "Market.Dal_2/1.0.0": {
+    "Market.Dal/1.0.0": {
       "type": "project",
-      "path": "../Market.Dal_2/Market.Dal_2.csproj",
-      "msbuildProject": "../Market.Dal_2/Market.Dal_2.csproj"
+      "path": "../Market.Dal_2/Market.Dal.csproj",
+      "msbuildProject": "../Market.Dal_2/Market.Dal.csproj"
     },
-    "Market.Data.Sql_2/1.0.0": {
+    "Market.Data.Sql/1.0.0": {
       "type": "project",
-      "path": "../Market.Data.Sql_2/Market.Data.Sql_2.csproj",
-      "msbuildProject": "../Market.Data.Sql_2/Market.Data.Sql_2.csproj"
+      "path": "../Market.Data.Sql_2/Market.Data.Sql.csproj",
+      "msbuildProject": "../Market.Data.Sql_2/Market.Data.Sql.csproj"
     },
-    "Market.Entities_2/1.0.0": {
+    "Market.Entities/1.0.0": {
       "type": "project",
-      "path": "../Market.Entities_2/Market.Entities_2.csproj",
-      "msbuildProject": "../Market.Entities_2/Market.Entities_2.csproj"
+      "path": "../Market.Entities_2/Market.Entities.csproj",
+      "msbuildProject": "../Market.Entities_2/Market.Entities.csproj"
     },
     "Market.Model/1.0.0": {
       "type": "project",
@@ -1044,7 +1044,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Market.Entities_2 >= 1.0.0",
+      "Market.Entities >= 1.0.0",
       "Market.Model >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.0",
       "Newtonsoft.Json >= 13.0.2",
@@ -1079,8 +1079,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Entities_2\\Market.Entities_2.csproj": {
-              "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Entities_2\\Market.Entities_2.csproj"
+            "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Entities_2\\Market.Entities.csproj": {
+              "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Entities_2\\Market.Entities.csproj"
             },
             "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj": {
               "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj"

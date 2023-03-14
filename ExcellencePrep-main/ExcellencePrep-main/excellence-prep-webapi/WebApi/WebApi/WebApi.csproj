@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Market.Entities_2\Market.Entities_2.csproj" />
+    <ProjectReference Include="..\Market.Entities_2\Market.Entities.csproj" />
     <ProjectReference Include="..\Market.Model\Market.Model.csproj" />
     <ProjectReference Include="..\Utilities_Log\Utilities_Log.csproj" />
   </ItemGroup>

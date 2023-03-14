@@ -9,11 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities_Log", "Utilities_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Market.Model", "Market.Model\Market.Model.csproj", "{2664BF57-988B-400A-A404-C9243D92E813}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Market.Dal_2", "Market.Dal_2\Market.Dal_2.csproj", "{A222D5D9-6D12-4DFB-A64E-FB40920F13AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Market.Dal", "Market.Dal_2\Market.Dal.csproj", "{A222D5D9-6D12-4DFB-A64E-FB40920F13AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Market.Data.Sql_2", "Market.Data.Sql_2\Market.Data.Sql_2.csproj", "{A875512D-CC07-4207-92CA-5D7A69663FAE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Market.Data.Sql", "Market.Data.Sql_2\Market.Data.Sql.csproj", "{A875512D-CC07-4207-92CA-5D7A69663FAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Market.Entities_2", "Market.Entities_2\Market.Entities_2.csproj", "{E14B30C9-242F-4B97-BD3F-21AF52B471E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Market.Entities", "Market.Entities_2\Market.Entities.csproj", "{E14B30C9-242F-4B97-BD3F-21AF52B471E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

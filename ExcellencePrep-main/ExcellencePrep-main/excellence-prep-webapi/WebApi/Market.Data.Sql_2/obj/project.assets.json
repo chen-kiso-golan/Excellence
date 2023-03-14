@@ -147,7 +147,7 @@
           }
         }
       },
-      "Market.Dal_2/1.0.0": {
+      "Market.Dal/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -156,10 +156,10 @@
           "Utilities_Log": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Market.Dal_2.dll": {}
+          "bin/placeholder/Market.Dal.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Market.Dal_2.dll": {}
+          "bin/placeholder/Market.Dal.dll": {}
         }
       },
       "Market.Model/1.0.0": {
@@ -496,10 +496,10 @@
         "version.txt"
       ]
     },
-    "Market.Dal_2/1.0.0": {
+    "Market.Dal/1.0.0": {
       "type": "project",
-      "path": "../Market.Dal_2/Market.Dal_2.csproj",
-      "msbuildProject": "../Market.Dal_2/Market.Dal_2.csproj"
+      "path": "../Market.Dal_2/Market.Dal.csproj",
+      "msbuildProject": "../Market.Dal_2/Market.Dal.csproj"
     },
     "Market.Model/1.0.0": {
       "type": "project",
@@ -514,7 +514,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Market.Dal_2 >= 1.0.0",
+      "Market.Dal >= 1.0.0",
       "Market.Model >= 1.0.0",
       "Utilities_Log >= 1.0.0"
     ]
@@ -525,9 +525,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql_2\\Market.Data.Sql_2.csproj",
-      "projectName": "Market.Data.Sql_2",
-      "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql_2\\Market.Data.Sql_2.csproj",
+      "projectUniqueName": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql_2\\Market.Data.Sql.csproj",
+      "projectName": "Market.Data.Sql",
+      "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql_2\\Market.Data.Sql.csproj",
       "packagesPath": "C:\\Users\\behap\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Data.Sql_2\\obj\\",
       "projectStyle": "PackageReference",
@@ -546,8 +546,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Dal_2\\Market.Dal_2.csproj": {
-              "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Dal_2\\Market.Dal_2.csproj"
+            "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Dal_2\\Market.Dal.csproj": {
+              "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Dal_2\\Market.Dal.csproj"
             },
             "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj": {
               "projectPath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Model\\Market.Model.csproj"

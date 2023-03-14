@@ -1,4 +1,4 @@
-﻿using Market.Dal_2;
+﻿using Market.Dal;
 using Market.Model;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Utilities_Log;
 
-namespace Market.Data.Sql_2
+namespace Market.Data.Sql
 {
     public class ProductDS : BaseDataSql
     {
@@ -102,7 +102,7 @@ namespace Market.Data.Sql_2
                 Product Product = new Product();
                 Product.Id = (int)row["id"];
                 Product.Name = (string)row["name"];
-                Product.Price = (int)row["price"];
+                Product.Price = (decimal)row["price"];
                 Product.UnitsInStock = (int)row["unitsInStock"];
                 Product.DepartmentId = (int)row["departmentId"];
                 list.Add(Product);

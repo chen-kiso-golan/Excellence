@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uAOXGs5JsCfTKjd/HbrVqal2H9l4YAIf4tXmd1tIBgq684wRLEGbM4OR0JlXNJTxn61IqbxMCMVD3h7dUHc1gg==",
+  "dgSpecHash": "rkogMKCjZ83bap+bRoiHwSO6vaVXuwi/fHla6F0tGBfWGGp3JLC9KKZapeZtm4bpqzbhQ45/RsGpQgwlobkIcw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Entities_2\\Market.Entities_2.csproj",
+  "projectFilePath": "C:\\Users\\behap\\Desktop\\github\\Excellence\\ExcellencePrep-main\\ExcellencePrep-main\\excellence-prep-webapi\\WebApi\\Market.Entities_2\\Market.Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\behap\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\behap\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
