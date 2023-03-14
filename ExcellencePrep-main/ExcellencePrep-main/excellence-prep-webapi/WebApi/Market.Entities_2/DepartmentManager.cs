@@ -21,14 +21,14 @@ namespace Market.Entities
 
 
         public List<Department> DepartmentTable = new List<Department>();
-        public List<Department> ShowAllDepartmentFromDB()
+        public List<Department> getAllDepartmentFromDB()
         {
             try
             {
-                Log.LogEvent(@"Entities \ DepartmentManager \ ShowAllDepartmentFromDB ran Successfully - ");
+                Log.LogEvent(@"Entities \ DepartmentManager \ getAllDepartmentFromDB ran Successfully - ");
                 DepartmentTable.Clear();
                 DepartmentDS departmentDS = new DepartmentDS(Log);
-                return DepartmentTable = departmentDS.ReadAllDepartmentFromDB();
+                return DepartmentTable = departmentDS.getAllDepartmentFromDB();
             }
             catch (Exception ex)
             {

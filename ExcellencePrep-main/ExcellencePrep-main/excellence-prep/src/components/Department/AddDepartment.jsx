@@ -50,7 +50,7 @@ function AddDepartment(props) {
           </label>
           <input type="text" placeholder="Enter Department description" className="form-control" name="description" onChange={handleChange} value={formData.description} />
         </div>
-        <button className="form--submit btn btn-danger">Sign up</button>
+        <button className="form--submit btn btn-danger">Add</button>
       </form>
     </div>
   );

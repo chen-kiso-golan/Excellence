@@ -19,12 +19,12 @@ namespace Market.Data.Sql
             BaseDAL = new BaseDAL(Log);
         }
 
-        public List<Department> ReadAllDepartmentFromDB()
+        public List<Department> getAllDepartmentFromDB()
         {
             try
             {
-                Log.LogEvent(@"Data.Sql \ DepartmentDS \ ReadAllDepartmentFromDB ran Successfully - ");
-                string SQLquery = "select * from Departments";
+                Log.LogEvent(@"Data.Sql \ DepartmentDS \ getAllDepartmentFromDB ran Successfully - ");
+                string SQLquery = "EXEC getAllDepartmentFromDB";
                 DataTable dataTable = new DataTable();
                 dataTable = SqlDB.ReadFormDB(SQLquery);
                 return ConvertDataTableToList(dataTable);
@@ -43,7 +43,7 @@ namespace Market.Data.Sql
             try
             {
                 Log.LogEvent(@"Data.Sql \ DepartmentDS \ addDepartmentToDB ran Successfully - ");
-                string SQLquery = "insert into Departments values ('" + department.Name + "','" + department.Description + "')";
+                string SQLquery = "EXEC addDepartmentToDB @name='" + department.Name + "',@description='" + department.Description + "'";
                 SqlDB.WriteToDB(SQLquery);
             }
             catch (Exception ex)
@@ -60,7 +60,7 @@ namespace Market.Data.Sql
             try
             {
                 Log.LogEvent(@"Data.Sql \ DepartmentDS \ deleteDepartmentFromDB ran Successfully - ");
-                string SQLquery = "delete from Departments where id = " + id;
+                string SQLquery = "EXEC deleteDepartmentFromDB @id=" + id;
                 SqlDB.WriteToDB(SQLquery);
             }
             catch (Exception ex)
@@ -77,7 +77,7 @@ namespace Market.Data.Sql
             try
             {
                 Log.LogEvent(@"Data.Sql \ DepartmentDS \ updateDepartment ran Successfully - ");
-                string SQLquery = "update Departments set name = '" + department.Name + "', description = '" + department.Description + "' where id = " + department.Id.ToString();
+                string SQLquery = "EXEC updateDepartment @name = '" + department.Name + "', @description = '" + department.Description + "', @id = " + department.Id;
                 SqlDB.WriteToDB(SQLquery);
             }
             catch (Exception ex)

@@ -25,7 +25,7 @@ namespace Market.Data.Sql
             try
             {
                 Log.LogEvent(@"Data.Sql \ ProductDS \ getAllProductsFromDB ran Successfully - ");
-                string SQLquery = "select * from Products";
+                string SQLquery = "EXEC getAllProductsFromDB";
                 DataTable dataTable = new DataTable();
                 dataTable = SqlDB.ReadFormDB(SQLquery);
                 return ConvertDataTableToList(dataTable);
@@ -46,7 +46,7 @@ namespace Market.Data.Sql
             try
             {
                 Log.LogEvent(@"Data.Sql \ ProductDS \ addProductToDB ran Successfully - ");
-                string SQLquery = "insert into Products values ('" + product.Name + "','" + product.Price + "' ,'" + product.UnitsInStock + "' ,'" + product.DepartmentId + "')";
+                string SQLquery = "EXEC addProductToDB @name='" + product.Name + "', @price='" + product.Price + "' ,@unitsInStock='" + product.UnitsInStock + "' ,@departmentId='" + product.DepartmentId + "'";
                 SqlDB.WriteToDB(SQLquery);
             }
             catch (Exception ex)
@@ -65,7 +65,7 @@ namespace Market.Data.Sql
             try
             {
                 Log.LogEvent(@"Data.Sql \ ProductDS \ deleteProductFromDB ran Successfully - ");
-                string SQLquery = "delete from Products where id = " + id;
+                string SQLquery = "EXEC deleteProductFromDB @id= " + id;
                 SqlDB.WriteToDB(SQLquery);
             }
             catch (Exception ex)
@@ -83,7 +83,7 @@ namespace Market.Data.Sql
             try
             {
                 Log.LogEvent(@"Data.Sql \ ProductDS \ updateProduct ran Successfully - ");
-                string SQLquery = "update Products set name = '" + product.Name + "', price = '" + product.Price + "', unitsInStock = '" + product.UnitsInStock + "', departmentId = '" + product.DepartmentId + "' where id = " + product.Id.ToString();
+                string SQLquery = "EXEC updateProduct @id = '" + product.Id+"' ,@name = '" + product.Name + "', @price = '" + product.Price + "', @unitsInStock = '" + product.UnitsInStock + "', @departmentId = '" + product.DepartmentId;
                 SqlDB.WriteToDB(SQLquery);
             }
             catch (Exception ex)

@@ -33,7 +33,7 @@ namespace WebApi.Controllers
             {
                 MainManager.Instance.log.LogEvent(@"WebApi \ DepartmentController \ getAllDepartmentFromDB ran Successfully - ");
                 DepartmentList = new List<Department>();
-                DepartmentList = MainManager.Instance.DepartmentManager.ShowAllDepartmentFromDB();
+                DepartmentList = MainManager.Instance.DepartmentManager.getAllDepartmentFromDB();
                 return DepartmentList;
             }
     

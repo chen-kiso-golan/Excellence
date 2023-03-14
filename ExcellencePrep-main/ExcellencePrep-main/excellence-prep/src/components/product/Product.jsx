@@ -70,7 +70,7 @@ function Product(props) {
         <div className="form-group">
           <ChooseDepartmentRow chooseDepartment={chooseDepartment} />
         </div>
-        <button className="form--submit btn btn-danger">Sign up</button>
+        <button className="form--submit btn btn-danger">Add</button>
       </form>
     </div>
   );

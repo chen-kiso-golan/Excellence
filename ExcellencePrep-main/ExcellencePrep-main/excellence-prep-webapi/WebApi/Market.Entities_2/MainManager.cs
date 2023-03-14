@@ -32,7 +32,7 @@ namespace Market.Entities
         {
             try
             {
-                log = new LogManager(providerType.File);
+                log = new LogManager(providerType.Console);
                 DepartmentManager = new DepartmentManager(log);
                 ProductManager = new ProductManager(log);
                 log.LogEvent(@"Entities \ MainManager \ AppDomainInitializer ran Successfully - ");
