@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import { DepartmentReportEditPage, AddDepartmentPage, ProductPage, ProductAndDepartmentReportPage, ProductsReportEditPage } from "./pages/pagesIndex";
 import TopNavbar from "./components/topnavbar/TopNavbar";
 import "bootstrap/dist/css/bootstrap.min.css";
+//import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css";
 
 function App() {
   return (
