@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./TopNavbar.css";
 import { AddDepartmentPage, ProductPage, ProductAndDepartmentReportPage } from "../../pages/pagesIndex";
 
 function TopNavbar() {
