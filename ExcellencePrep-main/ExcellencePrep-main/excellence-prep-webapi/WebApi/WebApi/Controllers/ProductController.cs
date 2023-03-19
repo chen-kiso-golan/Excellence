@@ -47,18 +47,20 @@ namespace WebApi.Controllers
 
 
         [HttpPost("addProductToDB")]
-        public void addProductToDB([FromBody] Product product)
+        public JsonResult addProductToDB([FromBody] Product product)
         {
             try
             {
                 MainManager.Instance.log.LogEvent(@"WebApi \ ProductController \ addProductToDB ran Successfully - ");
                 MainManager.Instance.ProductManager.addProductToDB(product);
+                return new JsonResult("OK");
             }
 
             catch (Exception ex)
             {
                 MainManager.Instance.log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
             }
+            return new JsonResult("Problem");
         }
 
 
@@ -68,18 +70,20 @@ namespace WebApi.Controllers
 
         
         [HttpDelete("deleteProduct/{id}")]
-        public void deleteProduct(int id)
+        public JsonResult deleteProduct(int id)
         {
             try
             {
                 MainManager.Instance.log.LogEvent(@"WebApi \ ProductController \ deleteProduct ran Successfully - ");
                 MainManager.Instance.ProductManager.deleteProductFromDB(id);
+                return new JsonResult("OK");
             }
 
             catch (Exception ex)
             {
                 MainManager.Instance.log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
             }
+            return new JsonResult("Problem");
         }
 
 
@@ -87,18 +91,20 @@ namespace WebApi.Controllers
 
         
         [HttpPost("UpdateProduct")]
-        public void UpdateProduct([FromBody] Product product)
+        public JsonResult UpdateProduct([FromBody] Product product)
         {
             try
             {
                 MainManager.Instance.log.LogEvent(@"WebApi \ ProductController \ updateProduct ran Successfully - ");
                 MainManager.Instance.ProductManager.updateProduct(product);
+                return new JsonResult("OK");
             }
 
             catch (Exception ex)
             {
                 MainManager.Instance.log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
             }
+            return new JsonResult("Problem");
         }
     }
 }

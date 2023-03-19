@@ -60,7 +60,9 @@ namespace Utilities_Log
                     {
                         if (LogManager.LogQueue.Count > 0)
                         {
+
                             SingleLogData item = LogManager.LogQueue.Dequeue();
+                            if (item == null) continue;
                             if (item.LogType == "Event")
                             {
                                 MyLog.LogEvent(item.msg);

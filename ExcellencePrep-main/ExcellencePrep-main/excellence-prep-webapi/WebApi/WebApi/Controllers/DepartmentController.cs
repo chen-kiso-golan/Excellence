@@ -50,13 +50,13 @@ namespace WebApi.Controllers
 
         
         [HttpPost("addDepartmentToDB")]
-        public void addDepartmentToDB([FromBody] Department department)
+        public JsonResult addDepartmentToDB([FromBody] Department department)
         {
             try
             {
                 MainManager.Instance.log.LogEvent(@"WebApi \ DepartmentController \ addDepartmentToDB ran Successfully - ");
                 MainManager.Instance.DepartmentManager.addDepartmentToDB(department);
-                //return new JsonResult("OK");
+                return new JsonResult("OK");
             }
 
             catch (Exception ex)
@@ -64,7 +64,7 @@ namespace WebApi.Controllers
                 MainManager.Instance.log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
             }
 
-            //return new JsonResult("Problem");
+            return new JsonResult("Problem");
         }
 
         
@@ -72,18 +72,20 @@ namespace WebApi.Controllers
 
 
         [HttpDelete("deleteDepartment/{id}")]
-        public void deleteDepartmentFromDB(int id)
+        public JsonResult deleteDepartmentFromDB(int id)
         {
             try
             {
                 MainManager.Instance.log.LogEvent(@"WebApi \ DepartmentController \ deleteDepartmentFromDB ran Successfully - ");
                 MainManager.Instance.DepartmentManager.deleteDepartmentFromDB(id);
+                return new JsonResult("OK");
             }
 
             catch (Exception ex)
             {
                 MainManager.Instance.log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
             }
+            return new JsonResult("Problem");
         }
 
 
@@ -93,18 +95,20 @@ namespace WebApi.Controllers
 
 
         [HttpPost("UpdateDepartment")]
-        public void updateDepartment([FromBody] Department department)
+        public JsonResult updateDepartment([FromBody] Department department)
         {
             try
             {
                 MainManager.Instance.log.LogEvent(@"WebApi \ DepartmentController \ updateDepartment ran Successfully - ");
                 MainManager.Instance.DepartmentManager.updateDepartment(department);
+                return new JsonResult("OK");
             }
 
             catch (Exception ex)
             {
                 MainManager.Instance.log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
             }
+            return new JsonResult("Problem");
         }
 
 

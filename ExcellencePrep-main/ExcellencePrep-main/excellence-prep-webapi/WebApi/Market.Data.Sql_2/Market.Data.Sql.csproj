@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.9" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.9" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Market.Dal_2\Market.Dal.csproj" />
     <ProjectReference Include="..\Market.Model\Market.Model.csproj" />
     <ProjectReference Include="..\Utilities_Log\Utilities_Log.csproj" />

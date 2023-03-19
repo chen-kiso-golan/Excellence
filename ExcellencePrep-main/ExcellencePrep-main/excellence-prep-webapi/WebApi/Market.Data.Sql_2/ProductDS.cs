@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 using Utilities_Log;
 
 namespace Market.Data.Sql
@@ -40,56 +41,62 @@ namespace Market.Data.Sql
 
 
 
-        
-        public void addProductToDB(Product product)
+
+        public JsonResult addProductToDB(Product product)
         {
             try
             {
                 Log.LogEvent(@"Data.Sql \ ProductDS \ addProductToDB ran Successfully - ");
                 string SQLquery = "EXEC addProductToDB @name='" + product.Name + "', @price='" + product.Price + "' ,@unitsInStock='" + product.UnitsInStock + "' ,@departmentId='" + product.DepartmentId + "'";
                 SqlDB.WriteToDB(SQLquery);
+                return new JsonResult();
             }
             catch (Exception ex)
             {
                 Log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
             }
+            return new JsonResult();
         }
 
 
 
 
 
-        
-        public void deleteProductFromDB(int id)
+
+        public JsonResult deleteProductFromDB(int id)
         {
             try
             {
                 Log.LogEvent(@"Data.Sql \ ProductDS \ deleteProductFromDB ran Successfully - ");
                 string SQLquery = "EXEC deleteProductFromDB @id= " + id;
                 SqlDB.WriteToDB(SQLquery);
+                return new JsonResult();
             }
             catch (Exception ex)
             {
                 Log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
             }
+            return new JsonResult();
         }
 
 
 
 
-        
-        public void updateProduct(Product product)
+
+        public JsonResult updateProduct(Product product)
         {
             try
             {
                 Log.LogEvent(@"Data.Sql \ ProductDS \ updateProduct ran Successfully - ");
                 string SQLquery = "EXEC updateProduct @id = '" + product.Id+"' ,@name = '" + product.Name + "', @price = '" + product.Price + "', @unitsInStock = '" + product.UnitsInStock + "', @departmentId = '" + product.DepartmentId;
                 SqlDB.WriteToDB(SQLquery);
+                return new JsonResult();
             }
             catch (Exception ex)
             {
                 Log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
             }
+            return new JsonResult();
         }
 
 

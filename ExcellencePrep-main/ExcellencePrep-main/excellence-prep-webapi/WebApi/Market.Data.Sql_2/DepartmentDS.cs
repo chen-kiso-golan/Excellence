@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Web.Mvc;
 using System.Xml.Linq;
 using Utilities_Log;
 
@@ -38,52 +38,58 @@ namespace Market.Data.Sql
 
 
 
-        public void addDepartmentToDB(Department department)
+        public JsonResult addDepartmentToDB(Department department)
         {
             try
             {
                 Log.LogEvent(@"Data.Sql \ DepartmentDS \ addDepartmentToDB ran Successfully - ");
                 string SQLquery = "EXEC addDepartmentToDB @name='" + department.Name + "',@description='" + department.Description + "'";
                 SqlDB.WriteToDB(SQLquery);
+                return new JsonResult();
             }
             catch (Exception ex)
             {
                 Log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
             }
+            return new JsonResult();
         }
 
 
 
-        
-        public void deleteDepartmentFromDB(int id)
+
+        public JsonResult deleteDepartmentFromDB(int id)
         {
             try
             {
                 Log.LogEvent(@"Data.Sql \ DepartmentDS \ deleteDepartmentFromDB ran Successfully - ");
                 string SQLquery = "EXEC deleteDepartmentFromDB @id=" + id;
                 SqlDB.WriteToDB(SQLquery);
+                return new JsonResult();
             }
             catch (Exception ex)
             {
                 Log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
             }
+            return new JsonResult();
         }
 
 
 
 
-        public void updateDepartment(Department department)
+        public JsonResult updateDepartment(Department department)
         {
             try
             {
                 Log.LogEvent(@"Data.Sql \ DepartmentDS \ updateDepartment ran Successfully - ");
                 string SQLquery = "EXEC updateDepartment @name = '" + department.Name + "', @description = '" + department.Description + "', @id = " + department.Id;
                 SqlDB.WriteToDB(SQLquery);
+                return new JsonResult();
             }
             catch (Exception ex)
             {
                 Log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
             }
+            return new JsonResult();
         }
 
 

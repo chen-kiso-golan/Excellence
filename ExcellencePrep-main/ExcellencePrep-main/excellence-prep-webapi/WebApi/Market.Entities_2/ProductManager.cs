@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 using Utilities_Log;
 
 namespace Market.Entities
@@ -40,53 +41,59 @@ namespace Market.Entities
 
 
 
-        
-        public void addProductToDB(Product product)
+
+        public JsonResult addProductToDB(Product product)
         {
             try
             {
                 Log.LogEvent(@"Entities \ ProductManager \ addProductToDB ran Successfully - ");
                 ProductDS productDS = new ProductDS(Log);
                 productDS.addProductToDB(product);
+                return new JsonResult();
             }
             catch (Exception ex)
             {
                 Log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
             }
+            return new JsonResult();
         }
 
 
 
 
-        
-        public void deleteProductFromDB(int id)
+
+        public JsonResult deleteProductFromDB(int id)
         {
             try
             {
                 Log.LogEvent(@"Entities \ ProductManager \ deleteProductFromDB ran Successfully - ");
                 ProductDS productDS = new ProductDS(Log);
                 productDS.deleteProductFromDB(id);
+                return new JsonResult();
             }
             catch (Exception ex)
             {
                 Log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
             }
+            return new JsonResult();
         }
 
 
-        
-        public void updateProduct(Product product)
+
+        public JsonResult updateProduct(Product product)
         {
             try
             {
                 Log.LogEvent(@"Entities \ ProductManager \ updateProduct ran Successfully - ");
                 ProductDS productDS = new ProductDS(Log);
                 productDS.updateProduct(product);
+                return new JsonResult();
             }
             catch (Exception ex)
             {
                 Log.LogException($@"An Exception occurred while initializing the {ex.StackTrace} : {ex.Message}", ex);
             }
+            return new JsonResult();
         }
     }
 }
